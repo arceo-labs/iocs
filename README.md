@@ -1,2 +1,2 @@
-# iocs
-Resilience Threat Intelligence IOCs
+# IOCs
+This repository contains Resilience Threat Intelligence IOCs
