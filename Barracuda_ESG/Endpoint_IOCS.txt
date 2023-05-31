@@ -1,0 +1,22 @@
+
+	File Name				MD5 Hash							Type 
+1	appcheck.sh				N/A									Bash script
+2	aacore.sh				N/A									Bash script
+3	1.sh					N/A									Bash script
+4	mod_udp.so				827d507aa3bde0ef903ca5dec60cdec8	SALTWATER Variant
+5	intent					N/A									N/A
+6	install_helo.tar		2ccb9759800154de817bf779a52d48f8	TAR Package
+7	intent_helo				f5ab04a920302931a8bd063f27b745cc	Bash script
+8	pd						177add288b289d43236d2dba33e65956	Reverse Shell
+9	update_v31.sh			881b7846f8384c12c7481b23011d8e45	Bash script
+10	mod_require_helo.lua	cd2813f0260d63ad5adf0446253c2172	SEASIDE
+11	BarracudaMailService	82eaf69de710abdc5dea7cd5cb56cf04	SEASPY
+12	BarracudaMailService	e80a85250263d58cc1a1dc39d6cf3942	SEASPY
+13	BarracudaMailService	5d6cba7909980a7b424b133fbac634ac	SEASPY
+14	BarracudaMailService	1bbb32610599d70397adfdaf56109ff3	SEASPY
+15	BarracudaMailService	4b511567cfa8dbaa32e11baf3268f074	SEASPY
+16	BarracudaMailService	a08a99e5224e1baf569fda816c991045	SEASPY
+17	BarracudaMailService	19ebfe05040a8508467f9415c8378f32	SEASPY
+18	mod_udp.so				1fea55b7c9d13d822a64b2370d015da7	SALTWATER Variant
+19	mod_udp.so				64c690f175a2d2fe38d3d7c0d0ddbb6e	SALTWATER Variant
+20	mod_udp.so				4cd0f3219e98ac2e9021b06af70ed643	SALTWATER Variant
