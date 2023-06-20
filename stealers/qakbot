@@ -1,0 +1,452 @@
+Analytical Limitations / Caveats
+On 05/05/23, a trusted third-party partner alerted us to the following QakBot Malware campaign.  
+
+
+Sender(s):
+
+AMraz@ralphsalinas.com
+
+CCarter@dismotospm.com
+
+dev@indonesianmotobike.com
+
+GAnderson@sotupa.pe
+
+gdrmy.baaer@teamt.co.za
+
+gihriscnea.tnerri@africact.co.za
+
+isrengi.qnum@pipeline59.com
+
+l.lceocleeon@petradigiprint.com
+
+leill97i@caresolutionkw.com
+
+leizab.etinhdl@tidarsaktifm.com
+
+lstark@toolsandadvice.com
+
+mariana90@destinytackle.com
+
+MWyman@abppe.org
+
+obeikclnlr.oca@hvids.org
+
+oersndenon.oadsr@beogradska-sminkernica.com
+
+rhrom@energypowerbattery.com.my
+
+supervisoritabsa@grupohanaska.com
+
+cnienow@boatsmauritius.com
+
+doneshu@langky.com
+
+ECartwright@porkerskenya.com
+
+KHand@soundxp.net
+
+n2o5r@chocolateinabottle.ro
+
+THansen@arnoldencomendero.com
+
+yrro9a0jm@punnamada.com
+
+zb.aoleriya@palacebutcher.com
+
+and perhaps others...
+
+ 
+
+Sender IP(s):
+
+bee.birch.relay.mailchannels.net (23.83.209.14)
+
+bumble.birch.relay.mailchannels.net (23.83.209.25)
+
+chaise.jabatus.fr (109.234.163.235)
+
+gproxy2-pub.mail.unifiedlayer.com (69.89.18.3)
+
+lax090.relay.arandomserver.com (198.252.99.42)
+
+mail.dyandra-promosindo.com (116.204.248.135)
+
+out12.sf2.colhost.com (190.8.177.224)
+
+se4m-iad1.servconfig.com (199.250.217.13)
+
+send39.emailfilter.io (185.241.212.44)
+
+serv23.registerdomain.co.za (129.232.210.26)
+
+spfilter3-out1.sel01.mschosting.com (110.4.44.19)
+
+us117-cp.valueserver.com.br (67.23.238.23)
+
+v5a.gigilist.com (41.216.184.184)
+
+vmi787322.contaboserver.net (154.53.55.188)
+
+vps17111.inmotionhosting.com (172.81.117.216)
+
+grapes3.fastcloud.id (103.28.12.123)
+
+mail50.filter04.mta.whmpanels.com (89.42.222.132)
+
+mail-rs213.nsresponse.com (184.170.148.11)
+
+mailserver1.grupoweb.cl (54.39.15.255)
+
+omta34.uswest2.a.cloudfilter.net (35.89.44.33)
+
+relay2-j.mailbaby.net (68.168.211.165)
+
+server.bhima.in (82.145.60.142)
+
+seventeen.mesra.my (v202.75.41.217)
+
+and perhaps others...
+
+
+
+Date:
+05/04/23 (04 May 2023)
+
+ 
+
+Subject(s):
+<hijacked existing e-mail thread>
+
+ 
+
+URL(s):
+
+
+https://14speedautobodyparts.com/mp/
+
+https://cablixcom.net/aett/
+
+https://d2drocket.com/qtm/
+
+https://eltiburongrupero.com.mx/mlut/
+
+https://ferroplasticas.com/aumu/
+
+https://indolegraphics.com/re/
+
+https://mbmobiledata.com.ng/ta/
+
+https://merrickengineering.com/li/
+
+https://metalmaxms.com.br/tenm/
+
+https://sna-india.com/tlp/
+
+https://theappbench.com/sp/
+
+https://uniformesjollpat.com/un/
+
+https://vertexsolars.com/lt/
+
+https://vikastyagiindore.com/lptr/
+
+https://vvusc.com/eoin/
+
+https://allfinanceadvice.com/te/?itdo=1
+
+https://cablixcom.net/aett/?te=4
+
+https://cearamirimprevi.com.br/utml/?etma=3
+
+https://dlvcrecoveryfirst.com/mq/?id=5
+
+https://emmezetaimp.it/uv/?voer=8
+
+https://fourpeakspartners.com/ui/?uiq=2
+
+https://lazos-creativos.com/ueun/?ut=9
+
+https://theuaemart.com/dg/?nemo=2
+
+
+
+Here is an example sample...
+
+ 
+DNS Request(s):
+vvusc.com (184.168.98.68)
+
+ 
+HTTP Request(s):
+hxxps://vvusc.com/eoin/
+
+
+File Name: Zqkwyko.zip
+
+https://www.virustotal.com/gui/file/ae7dc35c56bffff62b3b0090441edf4628014f91adc2f99089f785a4fecbf4d8/detection 
+
+MD5: 8781cb87d863bcc81016b393bcb1a030
+
+SHA-1: 461daa6027d87473d773d8cdada9e3ecbbe9a653
+
+SHA-256: ae7dc35c56bffff62b3b0090441edf4628014f91adc2f99089f785a4fecbf4d8
+
+SSDEEP: 384:xV1ys/ihkc8SkeQ0KPUGhw1B6tKGxD4zHfIesTQXihaIfmH3h/HJx+L50GjjaoxI:xVIsax8S1Q0B11BmWz/IrTQXihfmH3hP
+
+Note: ZIP Compressed Archive
+
+
+File Name: Otjqw.js
+
+https://www.virustotal.com/gui/file/2a8be1eb71f937c0a0954b2bff88f79ba27f84015691e432b8bcc71e0ca6493d/detection 
+ 
+https://www.hybrid-analysis.com/sample/2a8be1eb71f937c0a0954b2bff88f79ba27f84015691e432b8bcc71e0ca6493d?environmentId=160 
+
+https://app.any.run/tasks/3ae347f8-6e98-49f9-8431-31041c5b014e/ 
+
+https://tria.ge/230505-tsbqlsbd96/behavioral3 
+
+MD5: e1787b394fd1ba15268d0405e1b88ef0
+
+SHA-1: 6fae0c7b100f0e77068b82717b248f2a9be87740
+
+SHA-256: 2a8be1eb71f937c0a0954b2bff88f79ba27f84015691e432b8bcc71e0ca6493d
+
+SSDEEP: 768:rZOnzbXcSZVSfIcSoHvESFh/xwEeeCcy09pytLVIxxZtkwKjpOh6XHDR7yW3Jgwm:rAnzoSCI8VndAExa/HNxH8me
+
+TLSH: T1CA43FB1416C15CA02F2BBDA15B24A4A5D3EA4E218394434BF5AEB244F7CEBCCCDD87E5
+
+Note: Malicious JavaScript
+ 
+
+During execution, the Malicious JavaScript executes Encoded PowerShell (T1059.001) from to download and execute the next stage...
+
+rundll32.exe %TEMP%\pentaphylax.epopee,Time
+
+
+TCP Activity:
+192.121.16.233:80
+
+151.236.14.127:80
+
+192.121.16.232:80
+
+ 
+
+HTTP Request(s):
+http://192.121.16.233/XTLY1XQ/q6z2yCu8N8
+
+http://151.236.14.127/FQoBBQ/G0U1wpF4ESYq
+
+http://192.121.16.232/w0G/olS8CK
+ 
+ 
+
+File Name: pentaphylax.epopee
+Exported DLL Name: msfilter.dll
+
+https://www.virustotal.com/gui/file/00fe428195ff6b054f43358959a1dcd8198747ff310c59c40a37d264ebeddfa1/detection 
+
+https://www.hybrid-analysis.com/sample/00fe428195ff6b054f43358959a1dcd8198747ff310c59c40a37d264ebeddfa1?environmentId=160 
+
+https://app.any.run/tasks/98bed086-5563-41f6-90dd-1464d94c1420/ 
+
+https://tria.ge/230505-vyl9zadf2x/behavioral1 
+
+MD5: f7347e5114666cf7da420417092b3987
+
+SHA-1: 055d1c60dc2b12f0836b77957417e3466a030fa7
+
+SHA-256: 00fe428195ff6b054f43358959a1dcd8198747ff310c59c40a37d264ebeddfa1
+
+SSDEEP: 24576:xHA2XMYABs772W/8vLj/9sgR+OVnh8gt42vCkzeztwPOfQWyBZPPdhbBF91Xe95:FMYABC8vLj/2jA8gxZPPdhbBP1O95
+
+Rich PE header hash: be82fc0c676c0fff06adb2560310fe9d
+
+Imphash: bb73b10792501019aba44f9a83c3b5da
+
+Compile Time: 2021-09-21 15:08:20
+
+Note: Malicious Loader
+
+
+During execution, the loader executes the following malware...
+
+Exported DLL Name: CoreShellAPI.dll
+
+https://www.virustotal.com/gui/file/e35f8c0b527a1c8a982c120abf55b7c929ef4a09ea4fbb0d80c620980e92a260/detection 
+
+https://www.hybrid-analysis.com/sample/e35f8c0b527a1c8a982c120abf55b7c929ef4a09ea4fbb0d80c620980e92a260?environmentId=160 
+
+https://app.any.run/tasks/28b442d7-bb92-4783-a3ab-682a2445fe39/ 
+
+https://tria.ge/230505-v2pt9sdf4w/static1 
+
+MD5: 3cb21820cf5bf84153172e786d56ba7e
+
+SHA-1: 1b11735677ef6cb988c51ade3a8f9c76b810150f
+
+SHA-256: e35f8c0b527a1c8a982c120abf55b7c929ef4a09ea4fbb0d80c620980e92a260
+
+SSDEEP: 3072:UMME5L4NZYnZKVzVAhmAYJl3H1oTBfvn7Q:BeYnYzihDYJpH1oTBn7Q
+
+Rich PE header hash: bc6ffd505cc65b06f2d6cb013084aa45
+
+Imphash: 0141f24aaf1b810b9fcc5f6886f26f14
+
+Compile Time: 2023-05-02 10:06:11 UTC
+
+Note: QakBot Malware
+
+
+QakBot Config:
+·        Version: 404.1035
+·        Botnet: BB26
+·        Campaign: 1683279184
+
+
+Here is another example sample...
+ 
+
+DNS Request(s):
+
+cablixcom.net (198.57.151.192)
+
+
+HTTP Request(s):
+
+https://cablixcom.net/aett/?te=4
+
+ 
+
+File Name: Zsvyy.zip
+
+https://www.virustotal.com/gui/file/1d77f94cef1b4f2fc28b26444f2c5f6a1bb4c4b74d1f8c65b521b40fd231103c/detection 
+
+MD5: 6df64cdb8cda66832cf49f48b741c0ff
+
+SHA-1: 2b0fa0ff1c2aceb429ec85e107734d07625bc208
+
+SHA-256: 1d77f94cef1b4f2fc28b26444f2c5f6a1bb4c4b74d1f8c65b521b40fd231103c
+
+SSDEEP: 768:+fmtTUem1x4i9t8hl6Aj6tsWDkVQgJbRNmUmqKsMWuRBn1:+fmtwb1xZt04tsz5R6zWW
+
+Note: ZIP Compressed Archive
+
+
+
+File Name: Tbzj.js
+
+https://www.virustotal.com/gui/file/4c4c835feeb1d3e6b70cbde9650f7c991c8cb4dc83a4c86d47dea41c23937515/detection 
+
+https://www.hybrid-analysis.com/sample/4c4c835feeb1d3e6b70cbde9650f7c991c8cb4dc83a4c86d47dea41c23937515?environmentId=160 
+
+https://app.any.run/tasks/d0eb9cf3-0f3d-4471-ad1d-647eaba56d79/ 
+
+https://tria.ge/230505-x1mpmagg98/behavioral2 
+
+MD5: 7f8dc9a4fb26bc9ee0a071c079a6b9a8
+
+SHA-1: bc287bcc0c3e284aa325330ef15eb526af21097b
+
+SHA-256: 4c4c835feeb1d3e6b70cbde9650f7c991c8cb4dc83a4c86d47dea41c23937515
+
+SSDEEP: 768:DsP8QhRJ3FwtKKy6aQGlKy4Uv1An2Wz2N4u7mIsvLXOVEs7b5WYozBFz2ACZkS+q:D2RJ1NnQGlKy4A+2NYlFl1S+sWFSZ
+
+TLSH: T10D6350444AC06CB26F27BD966B28945467BE4D2143C4820BF4AEB248B7DDBCCC9DC7E1
+
+Note: Malicious JavaScript
+
+
+During execution, the Malicious JavaScript executes Encoded PowerShell (T1059.001) from to download and execute the next stage...
+
+rundll32.exe %TEMP%\Gruellings.englishedDuctal,Time
+ 
+
+TCP Activity:
+192.121.16.232:80
+
+151.236.14.127:80
+
+192.121.16.233:80
+
+ 
+HTTP Request(s):
+http://192.121.16.232/w0G/HUhaMXE1dUXU
+
+http://151.236.14.127/FQoBBQ/QZUDZD5kT
+
+http://192.121.16.233/XTLY1XQ/Ojj0RIyzp4
+
+ 
+
+File Name: Gruellings.englishedDuctal
+Exported DLL Name: msfilter.dll
+
+https://www.virustotal.com/gui/file/c52ba47d8a0aa3ba7829b0880ee17001f1a75b2988434ea8eb8e7a5ea8e5e3d7/detection 
+
+https://www.hybrid-analysis.com/sample/c52ba47d8a0aa3ba7829b0880ee17001f1a75b2988434ea8eb8e7a5ea8e5e3d7/6456d793645f8ee3190085e4 
+
+https://app.any.run/tasks/9411ce0e-2ed5-45e2-8790-de2feec7a70e/ 
+
+https://tria.ge/230505-x56nasbd21/behavioral4 
+
+MD5: 523cc56138abe3130a12aad573771714
+
+SHA-1: 8daed7acb98e3f055f1bed5a0d355a4a225f4c33
+
+SHA-256: c52ba47d8a0aa3ba7829b0880ee17001f1a75b2988434ea8eb8e7a5ea8e5e3d7
+
+SSDEEP: 24576:xHA2XMYABs772W/8vLj/9sgR+OVnh8gt42vCkzeztwPOfQWyBZPPdhbBF91Xe9a:FMYABC8vLj/2jA8gxZPPdhbBP1O9a
+
+Rich PE header hash: be82fc0c676c0fff06adb2560310fe9d
+
+Imphash: bb73b10792501019aba44f9a83c3b5da
+
+Compile Time: 2021-09-21 15:08:20
+
+Note: Malicious Loader
+
+
+During execution, the loader executes the following malware...
+
+
+Exported DLL Name: CoreShellAPI.dll
+
+https://www.virustotal.com/gui/file/f378ac37b71e821512e4356d8615619f26930129b13bee5acb01ec66ec997cb1/detection 
+
+https://www.hybrid-analysis.com/sample/f378ac37b71e821512e4356d8615619f26930129b13bee5acb01ec66ec997cb1?environmentId=160 
+
+https://app.any.run/tasks/74995941-0f42-4e96-a47b-23d9fff1602e/ 
+
+https://tria.ge/230505-yclcbsaa33/static1 
+
+MD5: 39eba7d9f6d553fca79eb95ea134c8f0
+
+SHA-1: 923193ebdc7bea748763c154b07621cbf85a0804
+
+
+SHA-256: f378ac37b71e821512e4356d8615619f26930129b13bee5acb01ec66ec997cb1
+
+SSDEEP: 3072:7g0KGh5Z8j3EzihlFsUA9QJb4VMH58TBff57Q:rKGJGEz+lOB2JEVMH58TB3RQ
+
+Rich PE header hash: bc6ffd505cc65b06f2d6cb013084aa45
+
+Imphash: 0141f24aaf1b810b9fcc5f6886f26f14
+
+Compile Time: 2023-05-02 10:06:11 UTC
+
+Note: QakBot Malware
+
+
+QakBot Config:
+·        Version: 404.1035
+·        Botnet: BB26
+·        Campaign: 1683279184
+
+
+
+
+***TLP:GREEN***
+TLP:GREEN = Limited disclosure, recipients can spread this within their community. Sources may use TLP:GREEN when information is useful to increase awareness within their wider community. Recipients may share TLP:GREEN information with peers and partner organizations within their community, but not via publicly accessible channels. TLP:GREEN information may not be shared outside of the community. Note: when “community” is not defined, assume the cybersecurity/defense community. (https://www.first.org/tlp/) 
