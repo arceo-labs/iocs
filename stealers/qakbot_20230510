@@ -1,0 +1,393 @@
+Malspam: QakBot Malware - 05/10/23 - IoC Share
+
+***TLP:GREEN***
+
+QakBot Malware
+2022 saw a resurgence of several malware families, including Qakbot, Conti, Emotet, Ursnif, and Trickbot. As Qakbot has continued to evolve and adopt new delivery methods, observed attacks have increased since April 2023. The most recent campaigns have focused on the "conversation hijacking" phishing tactic, where the attacker emulates an ongoing email exchange to make malicious emails seem less suspicious [1]. 
+
+The below MITRE link provides further information and Tactics, Techniques, and Procedures associated with this malware family::
+Qakbot: https://attack.mitre.org/software/S0650/  
+
+
+Analytical Limitations / Caveats
+On 05/10/23, a trusted third-party partner alerted us to the following QakBot Malware campaign.  
+ 
+----------------------------------------------------------------------------------------------------------------
+
+Sender(s):
+
+klocko@fenomenhouse.com
+
+amcub.maudahb@hotelparkside.com
+
+AOkuneva@transilvaniaglamping.com
+
+CCruickshank@financingtutors.com
+
+chaplin.derrick@mail.ee
+
+DBraun@rioxunto.com
+
+ebteknht.ri@homeworkingwriters.com
+
+EDooley@shikhalbalad.com
+
+ehlte5b9@mtsn20jkt.info
+
+ekllen9@myfulevo.com
+
+elrefvfl@divalash.co
+
+eo.ieymmehzrc@vgfcgloves.com
+
+feedback@ictqpharm.com
+
+fkoepp@residencialakbalpueblomagico.com
+
+FPagac@smarthostug.com
+
+haes.wtmci@mcsconstructionservices.com
+
+JJacobs@elementalng.com
+
+KHartmann@aamdaar.me
+
+kucolko@cadeirasrosa.com.br
+
+l2a@wearecellexir.com
+
+lbrnkai@pkbmattaubah.sch.id
+
+leodugi.narcrna@3n.com.pk
+
+lichmonek.oe@armourabeautysoap.com.com
+
+LMedhurst@turbocc.pk
+
+LMills@lifetrackshoping.com
+
+master@pelaezmasonry.com
+
+n.fkniczfrieegmi@shahmietravel.com.my
+
+nzziht@promenadeinv.com
+
+PSchneider@desalopait.id
+
+rmorar@braidyjewelers.com
+
+suaaeril.l@boulevardparisanjuan.com.ar
+
+twtoarns@hafeez.pk
+
+uaknrsnykcn.ciafh@compositevieta.com
+
+and perhaps others...
+
+
+
+Sender IP(s):
+
+a2nlsmtp01-01.prod.iad2.secureserver.net (198.71.224.24)
+
+a2nlsmtp01-02.prod.iad2.secureserver.net (198.71.225.36)
+
+ashosting.bkdata.vn (45.124.84.10)
+
+beige.elm.relay.mailchannels.net (23.83.212.16)
+
+bird.elm.relay.mailchannels.net (23.83.212.17)
+
+cloud.indolj.pk (209.59.154.8)
+
+cronus.canspace.ca (144.217.65.92)
+
+cyan.elm.relay.mailchannels.net (23.83.212.47)
+
+euk9.eukhosting.net (5.77.36.110)
+
+eu-shark2.inbox.eu (195.216.236.82)
+
+iguana.tulip.relay.mailchannels.net (23.83.218.253)
+
+ip139.ip-87-98-164.eu (87.98.164.139)
+
+ip177.ip-51-83-214.eu (51.83.214.177)
+
+mail53.filter04.mta.whmpanels.com (89.42.222.135)
+
+mail-rs202.nsresponse.com (184.170.148.10)
+
+mx227.fl10.wiroos.host (51.79.14.227)
+
+nc-ph-0329-14.termpaperswriting.com (209.188.7.197)
+
+omta040.useast.a.cloudfilter.net (44.202.169.39)
+
+omta36.uswest2.a.cloudfilter.net (35.89.44.35)
+
+out16-32.antispamcloud.com (185.201.18.32)
+
+out3-mx.anti-spam-premium.com (67.227.144.36)
+
+p3plsmtps2ded01.prod.phx3.secureserver.net (208.109.80.58)
+
+pelanduk.empatdns.com (180.235.149.204)
+
+relay1-c.mailbaby.net (64.20.36.196)
+
+satyabama.dua.rumahweb.com (203.175.8.34)
+
+secure.patientdrive.com (205.134.255.185)
+
+server07.hostingraja.org (103.83.81.20)
+
+sxb1nlsmtp01.prod.sxb1.secureserver.net (92.204.71.131)
+
+toucan.tulip.relay.mailchannels.net (23.83.218.254)
+
+vps.a1hosts.net (216.22.48.44)
+
+whm1006b.newipdns.com (43.225.110.39)
+
+za-outgoing-13-11.antispam.co.za (164.160.88.228)
+
+and perhaps others...
+
+
+
+Date:
+05/10/23 (10 May 2023)
+
+
+
+Subject(s):
+<hijacked existing e-mail thread>
+
+
+URL(s):
+
+https://amgconsultores.com.mx/au/?isbno
+
+https://berrioslongo.com/uqn/?mttoa
+
+https://blogdosalao.com.br/auqq/?udlrqmeooe
+
+https://cfcengenhariaviaria.com.br/ea/?neqeu
+
+https://cloudyentertainment.com/reus/?ets
+
+https://conexaopb.com.br/qu/?etaum
+
+https://cracktosoftz.com/ieop/?stin
+
+https://darshgames.com/suot/?eaqut
+
+https://dinaseithigal.com/ast/?mna
+
+https://evolutionshotcrete.com.au/ods/?lrouamb
+
+https://frbodystyling.com/ii/?oreosld
+
+https://goldenboycares.com/sc/?inst
+
+https://govinacademy.com/iat/?vatleuostp
+
+https://gr8tsites.com/ip/?et
+
+https://grupoamexico.com/nida/?eltvi
+
+https://gympantry.com/free/?iaqu
+
+https://iecdigital.net/tes/?ae
+
+https://isat.net.mx/tvp/?dnegeili
+https://kadisse.com/buia/?aequ
+
+https://logodesignflux.com/vi/?eesap
+
+https://montanasoluciones.com/ied/?futgi
+
+https://nortify.com.ng/eese/?orlod
+
+https://novedadescristianas.com/at/?uqi
+
+https://oflifefarms.com/ai/?dameasnsu
+
+https://perspectiveloans.com/to/?ut
+
+https://planetarojomarketing.com/eiiq/?rdoeuqloem
+
+https://poltechcare.com/nies/?ea
+
+https://rasa-system.com/ti/?malieoest
+
+https://restapiproject.com/al/?elv
+
+https://saranlavas.com/eami/?vliet
+
+https://sglinternational.com/suqt/?levstoaput
+
+https://top10suggestion.net/mqad/?rosoicrp
+
+https://travelallegypt.com/tv/?iqu
+
+https://twostarsafaris.com/tr/?plesednulre
+
+https://vinnew.111.com.ec/psr/?paees
+
+and perhaps others...
+
+
+-------------------------
+
+Here is an example sample...
+
+
+
+DNS Request(s):
+berrioslongo.com (192.185.5.210)
+
+
+HTTP Request(s):
+https://berrioslongo.com/uqn/?mttoa
+
+
+File Name: Rxnpirn.js
+https://www.virustotal.com/gui/file/7187d6426a63fd9005e016900312d9059350dade92d9656113048f2320a771f6/detection 
+https://www.hybrid-analysis.com/sample/7187d6426a63fd9005e016900312d9059350dade92d9656113048f2320a771f6?environmentId=160 
+https://app.any.run/tasks/bc6c3d58-fd48-4025-bca1-d5edbd84ef88/ 
+https://tria.ge/230510-wkh6tsbc9x/behavioral2 
+
+MD5: 2ecc86611e6f29843a3028400ad8441c
+SHA-1: 68434b267a19112adfb9ee4c993ccc9ad6e22e81
+SHA-256: 7187d6426a63fd9005e016900312d9059350dade92d9656113048f2320a771f6
+SSDEEP: 3072:MBMZZWPoRY8dc0wL6LrP5yLlnmTSaq9KrloDHP/9n2liKhb4o:MGZZWQRY860wefP5yLVsH+n2liKhb4o
+
+Note: Malicious JavaScript
+
+
+During execution, the Malicious JavaScript executes Encoded PowerShell (T1059.001) from to download and execute the next stage...
+
+rundll32.exe %ProgramData%\Dropsically.Spinose print
+See PS-1.png through PS-3.png
+
+
+TCP Activity:
+162.252.175.224:80
+
+158.255.213.110:80
+
+151.236.22.158:80
+
+158.255.213.247:80
+
+
+HTTP Request(s):
+http://162.252.175.224/1NoDX/tBRFLOT
+
+http://158.255.213.110/rQ8wEAP/IMtWV
+
+http://151.236.22.158/kruuUI/KrvcWkyc
+
+http://158.255.213.247/gZXmij/V7Seh274qUY
+
+
+File Name: Dropsically.Spinose
+Exported DLL Name: BJxklfLZFk
+https://www.virustotal.com/gui/file/085ea1c31cfb0851ebfa364ac72adfcd7187547ec8e10a60b0497ace3145a4a3/detection 
+https://www.hybrid-analysis.com/sample/085ea1c31cfb0851ebfa364ac72adfcd7187547ec8e10a60b0497ace3145a4a3?environmentId=160 
+https://app.any.run/tasks/b5ee988d-42eb-4051-b012-1e8812d209a1/ 
+https://tria.ge/230510-wehywahf39/behavioral4 
+
+MD5: 921bc2f7086cce9b050da822cd92958c
+SHA-1: 61abf391ea418d55af56949a9b8424bcee0a73cb
+SHA-256: 085ea1c31cfb0851ebfa364ac72adfcd7187547ec8e10a60b0497ace3145a4a3
+SSDEEP: 6144:d8ESLcu+wP1cIM0nX8lyvKGtlc6DyHkCefzH1GbOH52BaGPewOhwR+Pr+F:qEPu+Y2IrMEvbi6DyHkCez1GbOH52Bad
+
+Rich PE header hash: 1563b3e620528c293f06b4e491386f8e
+Imphash: 7de4adc3d81501f1c753437887d51969
+
+PDB Path: C:\Source\openoffice\main\redland\wntmsci12.pro\bin\raptor.pdb
+
+Compile Time: 2021-09-21 15:08:19
+
+Note: Malicious Loader
+ 
+
+During execution, the loader executes the following malware...
+ 
+
+Exported DLL Name: CoreShellAPI.dll
+https://www.virustotal.com/gui/file/9a9a576de94c9aa4644f30afd488c37c92ad59a9f7da39f661185fda19c5ca3a/detection 
+https://www.hybrid-analysis.com/sample/9a9a576de94c9aa4644f30afd488c37c92ad59a9f7da39f661185fda19c5ca3a?environmentId=100 
+https://app.any.run/tasks/be7d9ef3-a9b2-4e69-9f1e-50744994a7c9/ 
+https://tria.ge/230510-w1rsxahg29/behavioral2 
+
+MD5: 73752e09cceb51ffda3a7b969af4b531
+SHA-1: ab140d0e4a7f03ff2309a8acb8f78cc44cc30f70
+SHA-256: 9a9a576de94c9aa4644f30afd488c37c92ad59a9f7da39f661185fda19c5ca3a
+SSDEEP: 3072:QHgHsJq6uUu9VrVHl8j+YAHJYTVBHt8TBff/NGmg:FkwUun5lC+9HJwVBHt8TB3/NGf
+
+Rich PE header hash: bc6ffd505cc65b06f2d6cb013084aa45
+Imphash: 0141f24aaf1b810b9fcc5f6886f26f14
+
+Compile Time: 2023-05-10 01:51:48 UTC
+
+Note: QakBot Malware
+
+ 
+
+QakBot Config:
+·        Version: 404.1038
+·        Botnet: BB27
+·        Campaign: 1683720157
+
+---------------------------------------------------------------
+
+
+Related Open-Source Intelligence (OSINT):
+https://www.zscaler.com/blogs/security-research/rise-qakbot-attacks-traced-evolving-threat-techniques (Jul 2022)
+https://www.fortinet.com/blog/threat-research/new-variant-of-qakbot-spread-by-phishing-emails  (Jul 2022)
+https://www.mcafee.com/blogs/other-blogs/mcafee-labs/rise-of-lnk-shortcut-files-malware/ (Jun 2022)
+https://news.sophos.com/en-us/2022/03/10/qakbot-injects-itself-into-the-middle-of-your-conversations/ (Mar 2022)
+https://malpedia.caad.fkie.fraunhofer.de/details/win.qakbot  
+
+
+
+
+***TLP:GREEN***
+
+TLP:GREEN = Limited disclosure, recipients can spread this within their community. Sources may use TLP:GREEN when information is useful to increase awareness within their wider community. Recipients may share TLP:GREEN information with peers and partner organizations within their community, but not via publicly accessible channels. TLP:GREEN information may not be shared outside of the community. Note: when “community” is not defined, assume the cybersecurity/defense community. (https://www.first.org/tlp/) 
+
+
+For more information on APT38 or other threat actors, don't hesitate to contact us with questions or inquiries at secops@cyberresilience.com. 
+
+If you are experiencing a security incident or need to report a new claim, please contact claims@cyberresilience.com or our emergency hotline at 302-722-7236.
+
+
+
+
+
+
+
+
+Citations
+[1]https://www.secion.de/en/blog/blog-details/new-qakbot-qbot-attack-wave-emails-with-malicious-pdf-attachments
+
+
+
+
+
+
+
+
+
+
+
+
+Disclaimer
+This material is provided for informational purposes only. Accordingly, this material should not be viewed as a 
+substitute for the guidance and recommendations of a trained professional. Additionally, Arceo Labs, Inc. d/b/a Resilience does not endorse any coverage, systems, processes, or protocols addressed herein. Any references to non-Resilience Web sites are provided solely for convenience, and Resilience disclaims any responsibility with respect to such Websites. To the extent that this material contains any examples, please note that they are for illustrative purposes only. Additionally, examples are not intended to establish any standard of care, to serve as legal advice appropriate for any factual situation, or to provide an acknowledgment that any factual situation is covered by Resilience products. This material is not intended as a solicitation of insurance coverage. 
+
+Arceo Labs, Inc. d/b/a Resilience, 55 2nd St Suite 1950, San Francisco, CA 94105. All Rights Reserved.
