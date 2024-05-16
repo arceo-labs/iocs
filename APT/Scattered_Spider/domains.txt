@@ -61,6 +61,7 @@ iliad-sso.com
 infobbt.com
 inspiredlms.com
 intercomsso.net
+intercom-hr.com
 internalfb.com
 klaviyo-hr.com
 klaviyocorp.net
@@ -83,11 +84,13 @@ podiumsso.com
 polaris.me
 postmarksso.com
 powerdms.com
+prntsrc.net
 rbxhr.net
 realogy-hr.com
 recurlysso.com
 roblox-hrs.com
 sec-sso.net
+securian-hr.com
 sharing-folders.com
 sinchdev.com
 singtei.net
