@@ -19,6 +19,7 @@ bbthour.com
 bbtplus.com
 bbtvpn.com
 bell-hr.com
+block-hr.com
 block-sso.com
 bn-sso.com
 cashsso.com
@@ -42,9 +43,11 @@ corporate-pnc.com
 costsso.com
 desksso.com
 docusign.net
+doordash-support.com
 eclerx-sso.com
 fidelitysso.com
 fireblocks-sso.com
+five9-hr.com
 foundever-sso.com
 freshdesksso.com
 freshworks-sso.net
@@ -53,16 +56,19 @@ gemini-sso.com
 getabstract.com
 gitlabhr.com
 gitlabsso.com
+grubhub-support.com
 grubhubsso.com
 hanover-hr.com
+hr-intercom.com
 hubsso.net
 ibexgiobal.com
 iliad-sso.com
 infobbt.com
 inspiredlms.com
-intercomsso.net
 intercom-hr.com
+intercomsso.net
 internalfb.com
+kemper-support.com
 klaviyo-hr.com
 klaviyocorp.net
 klavlyo.com
@@ -85,6 +91,7 @@ polaris.me
 postmarksso.com
 powerdms.com
 prntsrc.net
+rbx-hr.com
 rbxhr.net
 realogy-hr.com
 recurlysso.com
@@ -101,6 +108,7 @@ ssotelnyx.com
 stargate-sso.com
 supporthub-iqor.com
 synchronyfinanciai.com
+taskus-sso.com
 teiekom.net
 telesignhr.com
 telnyx-sso.com
