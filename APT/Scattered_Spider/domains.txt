@@ -103,6 +103,7 @@ sinchdev.com
 singtei.net
 square-sso.com
 squarespace-hr.com
+squarespacehr.com
 ssopodium.com
 ssotelnyx.com
 stargate-sso.com
@@ -119,6 +120,7 @@ truecorphr.net
 trustsso.com
 unum-hr.com
 unumhr.com
+uscc-hr.com
 uscchr.com
 usccplus.com
 uscell.net
