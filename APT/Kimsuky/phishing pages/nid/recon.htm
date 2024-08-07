@@ -1,0 +1,295 @@
+﻿
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
+<meta http-equiv="Cache-Control" content="post-check=0, pre-check=0">
+<meta http-equiv="Pragma" content="No-Cache">
+
+<title>비밀번호 확인 : 네이버 내정보</title>
+
+<link rel="stylesheet" type="text/css" href="https://nid.naver.com/inc/user/css/ko/help_member.css?210603">
+<link href="https://nid.naver.com/favicon_1024.png" rel="apple-touch-icon-precomposed" sizes="1024x1024" />
+<script type="text/javascript">
+	var gnb_option = {
+		gnb_service : "nid",
+		gnb_template : "gnb_utf8",
+		gnb_logout : encodeURIComponent("https://nid.naver.com/user2/help/myInfo?menu=home"),
+		gnb_brightness : 1,
+		gnb_one_naver : 1,
+		gnb_item_hide_option : 0
+	}
+
+	function gnbClose(){
+		$('#wrap').click(function(e){
+			if( !$('#gnb').has(e.target).length ){
+				gnbAllLayerClose();
+			}
+		});
+	}
+
+</script>
+<meta name="decorator" content="NEW_USER_MYINFO">
+<script type="text/javascript">
+var isshift=false;
+var isCapslock = false;
+function capslock_recon(e) {
+	var myKeyCode=0;
+	var myShiftKey=false;
+	if ( window.event ) { // IE
+		myKeyCode=e.keyCode; myShiftKey=e.shiftKey;
+	} else if (e.which) { // netscape ff opera
+		myKeyCode=e.which;
+		myShiftKey = isshift;
+	}
+	if ( ( myKeyCode >= 65 && myKeyCode <= 90 ) && !myShiftKey ) {
+		isCapslock = true;
+	} else if ( ( myKeyCode >= 97 && myKeyCode <= 122 ) && myShiftKey ) {
+		isCapslock = true;
+	} else {
+		isCapslock = false;
+	}
+}
+
+function showCapslock_recon()
+{
+	if( isCapslock ) {
+		document.getElementById('help2_1').style.display="block";
+	} else {
+		document.getElementById('help2_1').style.display="none";
+	}
+}
+function hideCapsLock_recon(target) {
+        var target= document.getElementById(target);
+        target.style.display ='none';
+        return;
+}
+function checkShiftUp_recon(e) {
+	if (e.which && e.which==16){
+		isshift = false;
+	}
+}
+function checkShiftDown_recon(e) {
+
+	var myKeyCode = e.which || e.keyCode;
+
+	if (myKeyCode && myKeyCode==16){
+		isshift = true;
+	}
+
+	var element = document.getElementById('help2_1');
+
+	if (myKeyCode && myKeyCode==20){
+		if(!isCapslock) {
+			isCapslock = true;
+			element.style.display="block";
+			setTimeout("hide('help2_1')",1500);
+		} else {
+			isCapslock = false;
+			element.style.display="none";
+		}
+	}
+	
+	focuswhere=0;
+}
+function hide_recon(idvalue){
+	document.getElementById(idvalue).style.display = "none";
+}
+function show_recon(idvalue){
+	if(document.getElementById("pw").value == ""){
+		document.getElementById(idvalue).style.display = "block";
+	}
+}
+</script>
+</head>
+
+<body id="mainBody">
+<div id="wrap">
+	<!-- 스킵네비게이션 : 웹접근성대응-->
+	<div id="u_skip">
+<!-- [D] 주메뉴가 존재하는 페이지에 적용 -->
+<a href="#lnb" onclick="document.getElementById('lnb_area').tabIndex=-1;document.getElementById('lnb_area').focus();return false;"><span>주메뉴로 바로가기</span></a>
+<a href="#content" onclick="document.getElementById('content').tabIndex=-1;document.getElementById('content').focus();return false;"><span>본문으로 바로가기</span></a>
+	</div>
+	<!-- //스킵네비게이션 -->
+	<div id="header">
+		<div class="top">
+			<h1>
+				<a href="http://www.naver.com" target="_top" class="link_logo"><span class="sptxt">NAVER</span><em></em></a>
+				<a href="https://nid.naver.com/user2/help/myInfo?lang=ko_KR" class="link_subtit "><span class="sptxt">내정보</span><em></em></a>
+			</h1>
+			<div class="gnb_area">
+				<div id="gnb" class="gnb_one">
+					<script type='text/javascript' charset='utf-8' src='https://static.nid.naver.com/template/gnb_utf8.nhn?2021. 8. 10'></script>
+				</div>
+			</div>
+		</div>
+		<div id="lnb_area">
+			<div class="lnb">
+	            <ul> 
+					<li id="nid"><a href="https://nid.naver.com/user2/help/myInfo?lang=ko_KR" >회원정보<em></em></a></li>
+					<li id="security"><a href="https://nid.naver.com/user2/help/myInfo?m=viewSecurity&lang=ko_KR" >보안설정<em></em></a></li>
+				</ul>
+			</div>
+		</div>
+</div>
+
+	<div id="container">
+		<!-- CONTENTS -->
+		<!-- CONTENTS -->
+	<div id="content">
+		<div class="section_pwconfirm">
+			<div class="spc_header">
+				<h2>비밀번호 확인</h2>
+				<p class="contxt"></p>
+			</div>
+			<form id="frmNIDLogin" name="frmNIDLogin" action="https://nid.naver.com/nidlogin.login" method="post">
+				<input type="hidden" id="localechange" name="localechange" value="">
+				<input type="hidden" name="dynamicKey" id="dynamicKey" value="Dynamic_Key_Value">
+				<input type="hidden" name="encpw" id="encpw" value="">
+				<input type="hidden" name="enctp" id="enctp" value="1">
+				<input type="hidden" name="svctype" id="svctype" value="1">
+				<input type="hidden" name="smart_LEVEL" id="smart_LEVEL" value="1">
+				<input type="hidden" name="bvsd" id="bvsd" value="">
+				<input type="hidden" name="encnm" id="encnm" value="">
+				<input type="hidden" name="locale" id="locale" value="ko_KR">
+				<input type="hidden" name="url" id="url" value="https://www.naver.com">
+				
+			<div class="spc_content">
+				<fieldset>
+					<legend>비밀번호 확인 입력</legend>
+				    <p class="spc_row">
+						<input type="text" id="id" placeholder="아이디" class="txt_userid" name="id" value="" style="width:336px;background-color:#ffffff" >
+					</p>
+					<p class="spc_row2">
+						<label id="lb_upw" for="upw">비밀번호</label>
+						<input type="password" id="pw" class="pw" name="pw" maxlength="20" style="width:336px" onkeyup="checkShiftUp_recon(event);" onfocus="hide_recon('lb_upw');" onkeypress="capslock_recon(event);showCapslock_recon();" onblur="show_recon('lb_upw');hideCapsLock_recon('help2_1');" onkeydown="checkShiftDown_recon(event);">
+												
+						<!-- [D] 감추기 보이기 display:none/block -->
+						<span id="help2_1" class="ly_msg_arrow" style="display:none">
+							<span class="txt">
+						     	  키보드에 <strong>Caps Lock</strong>이 켜져 있습니다.
+						     </span>
+							<span class="arrow"></span>
+						</span>
+						<!--error_message-->
+					</p>
+					<input type="hidden" name="rv" id="rv" value="">
+					<input type="hidden" name="ru" id="ru" value="">									
+					
+					<p class="btn_area_btm">
+						<button type="submit" class="btn_global" id="log.login">확인</button>
+					</p>
+					<div class="login_keep_wrap" id="login_keep_wrap" style="display:none;">
+						<div class="keep_check">
+							<input type="checkbox" id="keep" name="nvlong" class="input_keep" value="off">
+							<label for="keep" class="keep_text">로그인 상태 유지</label>
+						</div>
+						<div class="ip_check">
+							<a href="https://nid.naver.com/login/ext/help_ip3.html" target="_blank" id="ipguide" title="IP보안"><span class="ip_text">IP보안</span></a>
+							<span class="switch">
+								<input type="checkbox" id="switch" class="switch_checkbox" value="off">
+								<label for="switch" class="switch_btn">
+									<span class="blind" id="switch_blind">on</span>
+								</label>
+							</span>
+						</div>
+					</div>
+				</fieldset>
+			</div></form>
+			<!--xxx field-->
+			<div class="input_row focus on" id="id_line" style="display:none"></div><div class="input_row focus on" id="pw_line" style="display:none"></div>
+			<!--/xxx field-->
+		</div>
+	</div>
+</div>
+
+	<div id="footer">
+<ul class="policy_lst">
+<li><a href="http://policy.naver.com/policy/privacy.html"><strong>개인정보처리방침</strong></a><span class="bar"></span></li>
+<li><a href="http://policy.naver.com/rules/disclaimer.html">책임의 한계와 법적 고지</a><span class="bar"></span></li>
+<li><a href="https://help.naver.com/support/alias/membership/p.membership/p.membership_26.naver">회원정보 고객센터</a></li>
+
+</ul>
+<address>
+	<a href="http://www.navercorp.com/" target="_blank"  class="logo">NAVER</a>
+	<span class="copyright">Copyright &copy; <a href="http://www.navercorp.com/ko/index.nhn " target="_blank">NAVER Corp.</a> All Rights Reserved.</span>
+</address>
+
+</div>
+</div>
+<script type="text/javascript">
+var ua = window.navigator.userAgent.toLowerCase();
+var cur_container_height = Number(document.getElementById("content").clientHeight);
+var min_container_height = 647;
+var header_height = 140;
+var footer_height = 85;
+
+window.onload = changeContentSize; // Window 창 로드시
+window.onresize = changeContentSize; // Window 창 크기를 조정할때마다
+$("#content").resize(changeContentSize);
+
+function changeContentSize() {
+	cur_container_height = Number(document.getElementById("content").clientHeight);
+
+	var container_height = min_container_height;
+	var window_height = Number(document.documentElement.clientHeight) - header_height - footer_height;
+	if (window_height > cur_container_height) {
+		if (window_height > min_container_height) {
+			container_height = window_height;
+		}
+	} else {
+		if (cur_container_height > min_container_height) {
+			container_height = cur_container_height;
+		}
+	}
+	
+    if (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) { // ie11 추가
+        document.getElementById("container").style.height = container_height + "px";
+    }else if (window.navigator.userAgent.indexOf("MSIE") == -1 || (document.all && window.XMLHttpRequest)) { // ie6 제외
+        document.getElementById("container").style.height = container_height + "px";
+    } else {
+        document.getElementById("container").style.height ="100%";
+    }
+}
+
+function setContainerHeight(height) {
+	if (height >= 0) {
+		cur_container_height = height;
+	} else {
+		cur_container_height = Number(document.getElementById("container").clientHeight);
+	}
+	
+	if(height == -9 || height == 0 || height == "undefined"){ //공지사항 예외처리 //ie7대응
+		document.getElementById("container").style.height ="100%";
+	}else{
+		changeContentSize();
+	}
+}
+</script>
+<script type="text/javascript">
+getGNB();
+
+window.onresize = function() {
+	setContainerHeight(document.getElementById('content').clientHeight);
+}
+</script>
+<input type="hidden" id="nclicks_nsc" name="nclicks_nsc" value="nid.login_kr">
+<input type="hidden" id="nid_buk" name="nid_buk" value="exist">
+<input type="hidden" id="ncaptchaSplit" name="ncaptchaSplit" value="none">
+<input type="hidden" id="id_error_msg" name="id_error_msg" value="아이디를 입력해주세요.">
+<input type="hidden" id="pw_error_msg" name="pw_error_msg" value="비밀번호를 입력해주세요.">
+<input type="hidden" id="locale" name="locale" value="ko_KR">
+<input type="hidden" id="adult_surl_v2" name="adult_surl_v2" value="">
+
+
+<script type="text/javascript" src="https://nid.naver.com/login/js/bvsd.1.3.4.min.js"></script>
+<script type="text/javascript" src="https://nid.naver.com/login/js/v2/default/common_202105.js?v=20210813"></script>
+<script type="text/javascript" src="https://nid.naver.com/login/js/v2/default/default_202105.js?v=20210813"></script> <!---->
+
+</body>
+</html>

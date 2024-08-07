@@ -1,0 +1,1691 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, target-densitydpi=medium-dpi" />
+	<meta http-equiv="X-UA-Compatible" content="IE=9" />
+	<meta http-equiv="Cache-Control" content="no-store"/>  
+	<meta http-equiv="Pragma" content="no-cache"/>  
+	<meta http-equiv="Expires" content="0"/>  
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="author" content="고려대학교 지식기반 포털시스템" />
+	<meta name="description" content="고려대학교 지식기반 포털시스템" />
+	<meta name="keywords" content="고려대학교 지식기반 포털시스템, 고려대학교, 지식기반, 포털시스템" />
+	<title>고려대학교 지식기반 포털시스템</title>
+	<link type="text/css" rel="stylesheet" href="/css/new/style.css"  charset="utf-8" />
+	<link type="text/css" rel="stylesheet" href="/css/new/login4.css"  charset="utf-8" />
+	<link type="text/css" rel="stylesheet" href="/css/new/sub1.css"  charset="utf-8" />
+	<link type="text/css" rel="stylesheet" href="/css/new/layerpop.css" charset="utf-8" />
+	<link type="text/css" rel="stylesheet" href="/css/new/layer_popup.css" charset="utf-8" />
+	<link type="text/css" rel="stylesheet" href="/css/new/jquery-ui-1.10.3.custom.css"  charset="utf-8" />
+	
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="/js/new/jquery-1.10.2.min.js" charset="UTF-8"></script>
+
+<script type="text/javascript" src="/js/new/jquery-ui-1.10.3.custom.min.js" charset="UTF-8"></script>
+<script type="text/javascript" src="/js/new/jquery_controller.js" charset="UTF-8"></script>
+<script type="text/javascript" src="/js/new/dragsort.js" charset="UTF-8"></script>
+<script type="text/javascript" src="/js/main/common.js" charset="utf-8"></script>
+<script type="text/javascript" src="/js/main/ncommon.js?ver=1.4" charset="utf-8"></script>
+<script type="text/javascript" src="/js/main/nportlet.js" charset="utf-8"></script>
+<script type="text/javascript" src="/js/main/userDefinition.js?v=0.1" charset="utf-8"></script>
+<script type="text/javascript" src="/js/manager.js" charset="utf-8"></script>
+<!--[if lte IE 8]>
+<script type="text/javascript" src="/js/new/PIE.js"></script>
+<![endif]-->
+
+
+<script type="text/javascript">
+
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	
+	ga('create', 'UA-48055953-1', 'korea.ac.kr');
+	ga('send', 'pageview');
+
+
+
+	document.domain = 'korea.ac.kr';
+	var img_src = '/images';
+	var css_src = '/css';
+	var js_src = '/js';
+	var yyyymmdd = '20230823';
+	var language = 'ko';
+	var _url = location.protocol + '//' + location.host;
+	$(window).load(function(){
+		try {
+			if (top != this) {
+				top.setResize(this);
+			}
+		} catch(e) {
+			
+		}
+	});
+</script>
+
+	<script type="text/javascript" src="/js/new/jquery.slides.min.js"></script>
+	<script type="text/javascript" src="/js/front/jsbn.js" charset="utf-8"></script>
+	<script type="text/javascript" src="/js/front/rsa.js" charset="utf-8"></script>
+	<script type="text/javascript" src="/js/front/prng4.js" charset="utf-8"></script>
+	<script type="text/javascript" src="/js/front/rng.js" charset="utf-8"></script>
+	<script type="text/javascript" src="/js/front/imsi_enc_nlogin.js" charset="utf-8"></script>
+	
+<!-- 	2014.08.14 공인인증서 방식 변경 -->
+	<script Language="javascript" src="/XecureObject/xecureweb.js"></script>
+	<!--[if IE 9]>
+		<link type="text/css" rel="stylesheet" href="/css/new/ie.css" />
+	<![endif]-->
+	<script language="javascript">
+	loginerr = function(){
+		$('.loginerr').dialog('open');
+	};
+		//PrintObjectTag();
+	</script>
+	<script type="text/javascript">
+	
+		// 2016.07.27 접속브라우저 get (통계용)
+		var agent = navigator.userAgent.toLowerCase(); 
+		var bnm = ""; 
+		
+		if ((navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) ) 		bnm = "IE";
+		if (agent.indexOf("safari")   != -1)  			bnm = "safari";
+		if (agent.indexOf("chrome") != -1) 		bnm = "chrome"; 
+		if (agent.indexOf("firefox")   != -1)  	 	bnm = "firefox";
+		if (agent.indexOf("opera") != -1 || agent.indexOf('opr') != -1)			bnm = "opera"; 
+		if (agent.indexOf("iPhone") > 0)  	 		bnm = "iPhone";
+		if (agent.indexOf("iPod") > 0 )  	 		bnm = "iPod";
+		if (agent.indexOf("Android ") > 0 )  	 	bnm = "Android";
+		
+		$(function(){
+			fnBoard('1', '1', true);
+			fnBoard('2', '1', true);
+			fnBoard('3', '1', true);
+			
+			alert('회원이 아니거나 사용자ID/PW 가 일치하지 않습니다.');
+			
+			$('#oneid').focus();
+			
+			// 2017-11-08 긴급 공지 띄움
+			// fnBoardView('공지사항', '201711081823310696', '');
+		});
+		
+		sugang = function(){
+			$('.suganglayer').dialog('open');	
+		}
+		
+ 		
+
+
+var s = '';
+s += '-----BEGIN CERTIFICATE-----\n';
+s += 'MIIDGTCCAoKgAwIBAgIEBo53lTANBgkqhkiG9w0BAQQFADBhMQswCQYDVQQGEwJL\n';
+s += 'UjELMAkGA1UECBMCYWExCzAJBgNVBAcTAmFhMQswCQYDVQQKEwJhYTELMAkGA1UE\n';
+s += 'CxMCYWExCzAJBgNVBAMTAmFhMREwDwYJKoZIhvcNAQkBFgJhYTAeFw0wMTA3MTgw\n';
+s += 'MDAwMDBaFw0wNjA3MTcwNDE4MDBaMGcxCzAJBgNVBAYTAktSMQwwCgYDVQQIEwNp\n';
+s += 'aWkxDDAKBgNVBAcTA2lpaTEMMAoGA1UEChMDaWlpMQwwCgYDVQQLEwNpaWkxDDAK\n';
+s += 'BgNVBAMTA2lpaTESMBAGCSqGSIb3DQEJARYDaWlpMIGfMA0GCSqGSIb3DQEBAQUA\n';
+s += 'A4GNADCBiQKBgQCzSWuMplCOF2v/RGL6xENjTH5SFMXKlcJbnebTm1ZuENjc5KHo\n';
+s += 'fW6t89qkHznyHlllWwVSv8bNm5u6TK5fNFY4RC95cU8jqAVK0oFRLRjkDAfoMVV1\n';
+s += 'fD5eoXmN6fyZWtLgiHXQ9evISBP62UkT5KjQ86dDKo2Dg53XFVyKI+ksAwIDAQAB\n';
+s += 'o4HXMIHUMGoGCWCGSAGG+EIBDQRdFltZb3VyIENlcnRpZmljYXRlIGlzIGR1ZSB1\n';
+s += 'cHRvIDEgeWVhci4gWW91IGhhdmUgdG8gcmVpc3N1ZSB5b3VyIGNlcnRpZmljYXRl\n';
+s += 'IGJlZm9yZSBpdCBleHBpcmVzMCIGCWCGSAGG+EIBAgQVFhN3d3cuc29mdGZvcnVt\n';
+s += 'LmNvLmtyMBEGCWCGSAGG+EIBAQQEAwIAgDAvBglghkgBhvhCAgUEIhYgZDQxZDhj\n';
+s += 'ZDk4ZjAwYjIwNGU5ODAwOTk4ZWNmODQyN2UwDQYJKoZIhvcNAQEEBQADgYEAPeWZ\n';
+s += 'SPTLWtdsNNrztq//3agTQImdn2Yrds5Rhf1Y2FZ+sXdZvPLBy3+p1eh4zy0IVyjm\n';
+s += 'AioAO9U//TuZfeHlOs6ffsBc87D3BaBH0CUdQxaPy99AtUrVnGxNjJ3QjSesiPxf\n';
+s += 'kcIPWgTrDozCmSKh0lr8MKzB0PpML7gpLkE6ZNQ=\n';
+s += '-----END CERTIFICATE-----\n';
+s += '';
+
+
+
+ 		
+ 		function f_change(obj, num){
+ 			var f = '';
+ 			if(num == '1'){
+ 				f = $('.singleid .step1 form');
+ 			} else if (num == '2') {
+ 				f = $('.findid .step1 form');
+ 			} else if(num == '3') {
+ 				f = '';
+ 			}
+ 			
+ 			var tVal = $(f).find('input:radio[name='+ obj.name +']:checked').val();
+ 			$(f).find('.hide').hide();
+ 			$(f).find('#'+ obj.name + tVal).show();
+ 		}
+ 		
+ 		function newGPIN(){
+ 			sURL = 'http://www.g-pin.go.kr/center/join/join_index.gpin';
+ 			var w = window.open(sURL, "newGPIN");
+ 		}
+ 		
+ 		// 공지사항 팝업
+ 		function popup_grade()
+ 		{
+ 			 var xPos = (document.body.clientWidth / 2) - (700 / 2); 
+ 		     xPos += window.screenLeft; 
+ 		     var yPos = (screen.availHeight / 2) - (440 / 2);
+ 			
+ 			 if (getCookie( "pop" ) != 'Y' ) {
+ 				 //window.open('/front/layout/popup3.jsp','popup', 'width=600, height=400, top=100, left='+ xPos +', toolbar=no, location=no, directories=no, status=no, menubar=no, resizable=no, scrollbars=no, copyhistory=no');
+ 				 //성적조회 공지사항
+ 				 //window.open('/popup/popup_grade.html','popup', 'width=670, height=400, top=100, left='+ xPos +', toolbar=no, location=no, directories=no, status=no, menubar=no, resizable=no, scrollbars=no, copyhistory=no');
+ 				 //수강신청 공지사항
+ 				 //window.open('/popup/popup_sugang2.html','popup', 'width=550, height=300, top=100, left='+ xPos +', toolbar=no, location=no, directories=no, status=no, menubar=no, resizable=no, scrollbars=no, copyhistory=no');
+ 			 }
+ 			 return;
+ 		}
+ 		
+ 		// 공지사항 팝업
+ 		function popup_google_info()
+ 		{
+ 			 var xPos = (document.body.clientWidth / 2) - (700 / 2); 
+ 		     xPos += window.screenLeft; 
+ 		     var yPos = (screen.availHeight / 2) - (440 / 2);
+ 			
+ 			 if (getCookie( "pop_google_info" ) != 'Y' ) {
+ 				 //window.open('/front/layout/popup3.jsp','popup', 'width=600, height=400, top=100, left='+ xPos +', toolbar=no, location=no, directories=no, status=no, menubar=no, resizable=no, scrollbars=no, copyhistory=no');
+ 				 //성적조회 공지사항
+ 				 window.open('/popup/popup_google_info.html','popup', 'width=780, height=510, top=100, left='+ xPos +', toolbar=no, location=no, directories=no, status=no, menubar=no, resizable=no, scrollbars=no, copyhistory=no');
+ 			 }
+ 			 return;
+ 		}
+ 		
+ 		function getCookie( name )
+ 		{
+ 		 var nameOfCookie = name + "=";
+ 		 var x = 0;
+ 		 while ( x <= document.cookie.length )
+ 		 {
+ 		  var y = (x+nameOfCookie.length);
+ 		  if ( document.cookie.substring( x, y ) == nameOfCookie )
+ 		  {
+ 		   if ( (endOfCookie=document.cookie.indexOf( ";", y )) == -1 )
+ 		    endOfCookie = document.cookie.length;
+ 		   return unescape( document.cookie.substring( y, endOfCookie ) );
+ 		  }
+ 		  x = document.cookie.indexOf( " ", x ) + 1;
+ 		  if ( x == 0 )
+ 		  break;
+ 		 }
+ 		 return; 
+ 		}
+
+
+ 		function predoLogin(f) {
+
+ 			//if(session_keys == null || session_keys == "") {
+ 			//	alert('포탈 로그인 페이지가 로딩 중입니다. 잠시 기다려 주세요');
+ 			//	return false;
+ 			//}
+ 			f.id.disabled = true;
+ 			f.pw.disabled = true;
+ 			f.loginsubmit.disabled = true;
+ 			setTimeout(function() { doLogin(f);}, 500);
+ 			return false;
+ 		}; 		
+ 		
+ 		function init() {
+ 			//alert(agent);
+ 			//alert(bnm);
+ 			$('#browser').val(bnm);
+ 			//popup_grade();   // 공지사항 팝업
+ 			//popup_google_info() //구글 용량제한 안내 팝업
+ 			//getKeys();
+ 			// 장학금신청 로그인Layer 출력용
+ 			if('Y' == 'null'){
+				fnLoginLayer('111');
+			}
+				
+ 		}
+	</script>
+</head>
+
+<body onLoad="javascript:init();"> 
+
+	<!-- Header -->
+    <div id="lheader">
+    	<div class="lwrapper">
+    		<h1>
+  				<a href="#" class="logo1"><img src="/images/new/logo3.png" alt="KUPID" /></a>
+			   	<a href="#" class="logo2"><img src="/images/new/emblem4.png" alt="Korea University Portal to Information Depository" /></a>
+			</h1>
+			<a href="#" class="sitemap">교내홈페이지</a>
+			<ul class="utility">
+           		<li><a href="http://www.korea.ac.kr" target="_blank">서울 캠퍼스</a></li>
+           		<li><a href="http://sejong.korea.ac.kr" target="_blank">세종 캠퍼스</a></li>
+           		<li><a href="http://www.kumc.or.kr" target="_blank">의료원</a></li>
+				<li class="lang">
+           			<a href="/front/Intro.kpd?language=en">ENGLISH</a>
+				</li>
+			</ul>
+			<div class="ql_box2">
+              <div>
+                  <ul class="ql_tabs2">
+                      <li class="on"><a href="#">대학</a></li>
+                      <li><a href="#">대학원</a></li>
+                      <li><a href="#">교육/연구/산학</a></li>
+                      <li><a href="#">행정/부속기관</a></li>
+                      <li><a href="#">기타</a></li>
+                  </ul>
+                  <div class="ql_tabs-cont">
+                     <div id="grp1">
+                              <ul>
+                                  <li><a href="http://kulawschool.korea.ac.kr/law/index.do">법과대학</a></li>
+                                  <li><a href="http://science.korea.ac.kr/">이과대학</a></li>
+                                  <li><a href="http://sis.korea.ac.kr/">자유전공학부</a></li>
+                                  <li><a href="http://chs.korea.ac.kr/">보건과학대학</a></li>
+                                  <li><a href="http://pharm.korea.ac.kr/">약학대학</a></li>
+                              </ul>
+                              
+                              <ul>
+                                  <li><a href="http://biz.korea.ac.kr/">경영대학</a></li>
+                                <li><a href="http://eng.korea.ac.kr/">공과대학</a></li>
+                                <li><a href="http://cic.korea.ac.kr/">정보통신대학</a></li>
+                                 <li><a href="http://inmun.korea.ac.kr/">인문대학</a></li>
+                                 <li><a href="http://sfa.korea.ac.kr/">국제스포츠학부</a></li>
+                              </ul>
+
+                              <ul>
+                                  <li><a href="http://libart.korea.ac.kr/">문과대학</a></li>
+                                  <li><a href="http://medicine.korea.ac.kr/">의과대학</a></li>
+                                  <li><a href="http://and.korea.ac.kr/kuand/index.do">디자인조형학부</a></li>
+                                  <li><a href="http://st.korea.ac.kr/">과학기술대학</a></li>
+                              </ul>
+
+                              <ul>
+								<li><a href="http://lifesci.korea.ac.kr/">생명과학대학</a></li>
+                                <li><a href="http://kuedu.korea.ac.kr/">사범대학</a></li> 
+                                 <li><a href="http://dis.korea.ac.kr/">국제학부</a></li>
+                                 <li><a href="http://cec.korea.ac.kr/">경상대학</a></li>
+                              </ul>
+
+                              <ul class="last">
+	                              <li><a href="http://hoan.korea.ac.kr/">정경대학</a></li>
+                                  <li><a href="http://nursing.korea.ac.kr/">간호대학</a></li>
+                                  <li><a href="http://masscom.korea.ac.kr/">언론학부</a></li>
+                                  <li><a href="http://spa.korea.ac.kr/">공공행정학부</a></li>
+                                  
+                              </ul>
+                          </div>
+                          <div id="grp2">
+                              <ul>
+                              	<li><a href="http://biz.korea.ac.kr/">경영전문대학원</a></li>
+                              	<li><a href="http://greenschool.korea.ac.kr/">그린스쿨 (에너지환경<br/>정책기술대학원)</a></li>
+								<li><a href="http://gsles.korea.ac.kr/">생명환경과학대학원</a></li>
+									<li><a href="http://biomedical.korea.ac.kr/">의용과학대학원</a></li>
+									
+                              	<li><a href="http://gpa.korea.ac.kr/">행정전문대학원</a></li>
+                              </ul>
+                              
+                              <ul>
+                              
+                              	<li><a href="http://gsmi.korea.ac.kr/">경영정보대학원</a></li>
+                              	<li><a href="http://mot.korea.ac.kr/">기술경영전문대학원</a></li>
+								<li><a href="http://mediacom.korea.ac.kr/">언론대학원</a></li>
+								<li><a href="http://medicine.korea.ac.kr/">의학전문대학원</a></li>
+								<li><a href="http://kukistschool.korea.ac.kr/">KU-KIST융합대학원</a></li>
+                              </ul>
+                              
+                              <ul>
+                              
+                              	<li><a href="http://enggra.korea.ac.kr/enggra/index.do">공학대학원</a></li>
+                              	<li><a href="http://www.korealabor.ac.kr/">노동대학원</a></li>
+                              	<li><a href="http://hig.korea.ac.kr/">인문정보대학원</a></li>
+                              	<li><a href="http://ime.korea.ac.kr/">정보보호대학원</a></li>
+                              </ul>
+                              
+                              <ul>
+                              
+								<li><a href="http://edugrad.korea.ac.kr/">교육대학원</a></li>
+                              	<li><a href="http://kulawschool.korea.ac.kr/law/index.do">법무대학원</a></li>            	
+								<li><a href="http://graduate.korea.ac.kr/">일반대학원</a></li>
+								<li><a href="http://kopolicy.korea.ac.kr/kopolicy/index.do">정책대학원</a></li>
+                              	
+                              	
+							
+                              </ul>
+                              
+                              <ul class="last">
+                              
+								<li><a href="http://gsis.korea.ac.kr/">국제대학원</a></li>
+                              	<li><a href="http://kulawschool.korea.ac.kr/law/index.do">법학전문대학원</a></li>
+                              	<li><a href="http://dent.korea.ac.kr/ku/index.asp?pop_close=">임상치의학대학원</a></li>
+                              	<li><a href="http://gscit.korea.ac.kr/">컴퓨터정보통신대학원</a></li>
+                              	<!-- 링크 및 고대 홈피에 없음 -->
+                              	 
+                              </ul>
+                          </div>
+                          
+                          <div id="grp3">
+                              <ul>
+                                  <li><a href="http://langtopia.korea.ac.kr/">국제어학원</a></li>
+                                  <li><a href="http://kubia.co.kr/">벤처창업보육산업단</a></li>
+                                  <li><a href="http://www.inabekorea.re.kr/">동북아경제경영연구소</a></li>
+                              </ul>
+                              <ul>
+                                  <li><a href="http://edulife.korea.ac.kr/">평생교육원</a></li>
+                                  <li><a href="http://riks.korea.ac.kr/">민족문화연구원</a></li>
+                                  <li><a href="http://ge.korea.ac.kr/ge/index.do">기초교육원</a></li>
+                              </ul>
+                              <ul>
+                                  <li><a href="https://isc.korea.ac.kr:5002/all/src/main/main.php">국제하계대학</a></li>
+                                  <li><a href="http://www.ilminkor.org/">일민국제관계연구원</a></li>
+                              </ul>
+                              <ul>
+                                  <li><a href="http://ctl.korea.ac.kr/">대학교육개발원(CTL)</a></li>
+                                  <li><a href="http://abeek.korea.ac.kr/">공학교육센터</a></li>
+                              </ul>
+                              <ul class="last">
+                                  <li><a href="http://klcc.korea.ac.kr/">한국어문화교육센터</a></li>
+                                  <li><a href="http://www.asiaticresearch.org/">아세아문제연구소</a></li>
+
+                              </ul>
+                          </div>							
+                          
+                          <div id="grp4">
+                              <ul>
+                                  <li><a href="http://library.korea.ac.kr/">도서관</a></li>
+                                  <li><a href="http://museum.korea.ac.kr/">박물관</a></li>
+                                  <li><a href="http://dorm.korea.ac.kr/src/main/main.php">서울학사</a></li>
+                                  <li><a href="http://kufarm.kr/">고대부속농장</a></li>
+
+                              </ul>
+                              <ul>
+                                  <li><a href="http://cdl.korea.ac.kr/index.jsp">CDL</a></li>
+                                  <li><a href="http://www.kupress.com/">출판부</a></li>
+                                  <li><a href="http://www.kuaa.or.kr/">교우회</a></li>
+                              </ul>
+                              <ul>
+                                  <li><a href="http://kwelfare.korea.ac.kr/">후생복지부</a></li>
+                                  <li><a href="http://www.ktn.ac.kr/">교육매체실</a></li>
+                                  <li><a href="http://kusafe.korea.ac.kr/">안전관리팀</a></li>
+                              </ul>
+                              <ul>
+                                  <li><a href="http://oia.korea.ac.kr/">국제처</a></li>
+                                  <li><a href="http://www.korsvcc.com/">양성평등센터</a></li>
+                                  <li><a href="http://kuweb.korea.ac.kr/rotc102/">학생군사교육단</a></li>
+                              </ul>
+                              <ul class="last">
+                                  <li><a href="http://library.korea.ac.kr/">과학도서관</a></li>
+                                  <li><a href="http://kusports.korea.ac.kr/">체육위원회</a></li>
+                                  <li><a href="http://ctl.korea.ac.kr/">대학교육개발원(CTL)</a></li>
+                              </ul>
+                          </div>							
+                          <div id="grp5">
+                              <ul>
+                              	<!-- 견학안내 업데이트 및 CMS추가 2017.07.21 -->
+                                  <li><a href="http://tour.korea.ac.kr">견학안내</a></li>
+                                  <li><a href="http://www.kukey.com/">고대신문</a></li>
+                                  <li><a href="http://rotc102.mireene.com/">학생군사교육단</a></li>
+                                  <li><a href="http://kucms.korea.ac.kr">CMS홈페이지안내</a></li>
+                              </ul>
+                              <ul>
+                                  <li><a href="http://chonghak.korea.ac.kr/">총학생회</a></li>
+                                  <li><a href="http://kuscc.korea.ac.kr/">학생상담센터</a></li>
+                                  <li><a href="http://www.ktn.ac.kr/">고대TV방송국 (KTN)</a></li>
+                              </ul>
+                              <ul>
+                                  <li><a href="http://krgs.korea.ac.kr/">대학원총학생회</a></li>
+                                  <li><a href="http://granite.korea.ac.kr/">영자신문사(GT)</a></li>
+                                  <li><a href="http://www.kubs.ac.kr/">교육방송국(KUBS)</a></li>
+                              </ul>
+                              <ul>
+                                  <li><a href="http://club.cyworld.com/club/main/club_main.asp?club_id=50460862">동아리연합회</a></li>
+                                  <li><a href="http://job.korea.ac.kr/">취업정보</a></li>
+								  <li><a href="http://korea.credu.com/">사이버연수원</a></li>	
+                              </ul>
+                              <ul>
+                                  <li><a href="http://www.kuleader.net/">응원단</a></li>
+                                  <li><a href="http://koreahead.korea.ac.kr/">교우경력관리</a></li>
+                                  <li><a href="http://union.korea.ac.kr/">직원노동조합</a></li>
+								  
+                                  
+                              </ul>
+                          </div>
+                  </div>
+              </div>
+              <div class="ql_bottom">
+              	<a href="#" id="fullmenu_close"><img src="/images/new/btn/btn_close4.png" alt="x" /></a>
+              </div>	
+          	</div>
+   		</div>
+    </div>
+    <!-- //Header -->
+	<!-- Contents -->
+	<div id="contents">
+		<div class="lwrapper">
+			<div class="right">
+				<div class="login_box">
+					<span class="login_top">
+						<span class="title">로그인</span>
+						<a href="javascript:fnSingleId();" class="subtitle">싱글 아이디 신청</a>
+					</span>
+					<div class="form">
+						<form action="https://portal.korea.ac.kr/common/Login.kpd" name="2e43d8de43728b743f44685fbb18ce6d37b865ca71daaa4fb135a7327f05aca0" id="2e43d8de43728b743f44685fbb18ce6d37b865ca71daaa4fb135a7327f05aca0" onsubmit="return predoLogin(this);" method="post"> 
+							<span class="input">
+								<label class="invisible" for="oneid">아이디</label>
+		    					<input class="margin_bottom" type="text" name="id" id="oneid" value="" />
+								<label class="invisible" for="_pw">비밀번호</label>
+		    					<input type="password" name="pw" id="_pw" value="" />
+		    					<input type="hidden" name="fefd281e2424b68b210f475017a42ce06c9d3d1ac59b92d00d12230b3cbc1111" value="" />
+		    					<input type="hidden" name="7ba1022c4df8bf11eaaf871f36dc88a134bb416d9b922762b9bb5a51c390bba0" value="" />
+								<input type="hidden" name="_csrf" value="834db69d-4bc4-43f5-b872-bacb71d079f2" />
+								<input type="hidden" name="edd5c612d897c3219c4a14ffe089190583e2148fcee4bc801e464a6255a4f659" value="edd5c612d897c3219c4a14ffe089190583e2148fcee4bc801e464a6255a4f659" />
+		    					<input type="hidden" name="direct_div"/>
+		    					<input type="hidden" name="pw_pass"/>
+		    					<input type="hidden" name="browser"  id="browser"/><!-- 2016. 07. 27 접속 브라우저 값 -->
+							</span>
+							<input id="loginsubmit" name="loginsubmit" type="submit" value="로그인" class="submit" />
+						</form>
+					</div>
+					<span class="links" style="height:8px;">
+						<a href="javascript:fnFindId();">아이디 / 비밀번호 찾기</a><br />
+						
+					</span>
+  				    <!--  span class="links" style="height:8px;"-->
+  				    	<!-- a href="javascript:loginerr();"><b>[로그인 오류 안내]</b></a-->
+  				    <span class="links" style="height:8px;">	
+  				    	<a class="" style="margin-top:30px;" href="http://korea.ac.kr/mbshome/mbs/university/file/Login_err_manual.pdf" target="_blank"><b><font size="3" color="#FAE100">[포탈 로그인 오류 안내]</font></b></a>
+  				    </span>
+					<!-- /span-->
+				</div>
+				<div class="hotlinks">
+					<ul id="login_links">
+						<li class="nobl">
+							<a href="http://mail.korea.ac.kr/" target="_blank">
+								<span><img src="/images/new/icon/icon_hotlink1_off.png" alt="" /></span>
+								메일
+							</a>
+						</li>
+						<li>
+							<a href="http://rms.korea.ac.kr/" target="_blank">
+								<span><img src="/images/new/icon/icon_hotlink2_off.png" alt="" /></span>
+								연구포털
+							</a>
+						</li>
+						<li>
+							<a href="http://library.korea.ac.kr/" target="_blank">
+								<span><img src="/images/new/icon/icon_hotlink3_off.png" alt="" /></span>
+								도서관
+							</a>
+						</li>
+						<li>
+							<a href="https://kucert.korea.ac.kr" target="_blank">
+								<span><img src="/images/new/icon/icon_hotlink4_off.png" alt="" /></span>
+								제증명
+							</a>
+						</li>
+						<li class="nobl">
+							<a href="javascript:sugang();">
+								<span><img src="/images/new/icon/icon_hotlink5_off.png" alt="" /></span>
+								수강신청
+							</a>
+						</li>						<li>
+							<a href="http://sugang.korea.ac.kr/grade/" target="_blank">
+								<span><img src="/images/new/icon/icon_hotlink6_off.png" alt="" /></span>
+								성적조회
+							</a>
+						</li>
+						<li>
+							<a href="javascript:fnLoginLayer('111');">
+								<span><img src="/images/new/icon/icon_hotlink7_off.png" alt="" /></span>
+								장학금신청
+							</a>
+						</li>
+						<li>
+							<a href="http://113366.com/koreauniv" target="_blank">
+								<span><img src="/images/new/icon/icon_hotlink8_off.png" alt="" /></span>
+								원격지원
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="helpdesk">
+					<strong class="title">포털 아이디/비밀번호 문의</strong>
+					<ul>
+						<li>학생</li>
+						<li>
+							<span class="icon">&nbsp;</span>
+							<span class="num">02-3290-1141~5, 4090~2</span>
+						</li>
+					</ul>
+					<ul>
+						<li>교직원</li>
+						<li>
+							<span class="icon icon1">&nbsp;</span>
+							<span class="num">02-3290-4777</span>
+						</li>
+					</ul>
+					<strong class="title">정보전산 문의</strong>
+					<ul>
+						<li>
+							<span class="icon icon2">&nbsp;</span>
+							<span class="num">02-3290-4777</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+	    	<div class="visual">
+	    		<div class="container">
+	    			<!-- 
+					<div align="right" width="100%" style="border:10px;width:100%;border:0px;position:absolute;z-index:100;">
+						<p style="padding: 5px 5px 0px 0px;"><a href="https://covid19.korea.ac.kr" target="_blank"><img src="/images/new/covid19_home6.png" alt="COVID19" style="width:350px;" /></a></p>
+					</div>
+					-->
+					<div class="visual-mask lmask">&nbsp;</div>
+					<div class="visual-mask rmask">&nbsp;</div>
+					<div class="caption"><div class="txt">&nbsp;</div></div>
+	    			<div class="slides" id="slides">
+	    					<div>                                                                                                                         																									
+		<img width="731" src="/images/new/img-20230313-visual-1.jpg" alt="서관시계탑" />                                                                      																									
+	</div>                                                                                                                        																									
+	<div>                                                                                                                         																									
+		<img width="731" src="/images/new/img-20230313-visual-2.jpg" alt="본관" />                                                                      																									
+	</div>                                                                                                                        																									
+	<div>                                                                                                                         																									
+		<img width="731" src="/images/new/img-20230313-visual-3.jpg" alt="호상" />                                                                      																									
+	</div>                                                                                                                        																									
+	<div>                                                                                                                         																									
+		<img width="731" src="/images/new/img-20230313-visual-4.jpg" alt="대학원" />                                                                      																									
+	</div>                                                                                                                        																									
+	<div>                                                                                                                         																									
+		<img width="731" src="/images/new/img-20230313-visual-5.jpg" alt="세종캠퍼스" />                                                                      																									
+	</div>                                                                                                                        																									
+
+	    			</div>
+	    		</div>
+	    	</div>
+    	</div>
+    	<div class="lwrapper">
+    		<div class="boards">
+    			<div class="top">
+    				<div class="block">
+    					<span class="lbl">공지사항</span>
+    					<ul class="snotice_list_1">
+    					</ul>
+    					<div class="btns"><a href="#" class="prev"><img src="/images/new/btn/prev3.png" alt="" /></a><a href="#" class="next"><img src="/images/new/btn/next3.png" alt="" /></a></div>
+    				</div>
+    				<div class="block">
+    					<span class="lbl">주요학사일정</span>
+    					<ul class="snotice_list_2">
+    					</ul>
+    					<div class="btns"><a href="#" class="prev"><img src="/images/new/btn/prev3.png" alt="" /></a><a href="#" class="next"><img src="/images/new/btn/next3.png" alt="" /></a></div>
+    				</div>
+    				<div class="block">
+    					<span class="lbl">FAQ</span>
+    					<ul class="snotice_list_3">
+    					</ul>
+    					<div class="btns"><a href="#" class="prev"><img src="/images/new/btn/prev3.png" alt="" /></a><a href="#" class="next"><img src="/images/new/btn/next3.png" alt="" /></a></div>
+    				</div>
+    				<div class="btn-boards"><a href="#"><img src="/images/new/btn/btn_boards-off.png" alt="" /></a></div>
+    			</div>
+    			<div class="bottom">
+    				<div class="block notice_list_1">
+    				</div>
+    				<div class="block notice_list_2">
+    				</div>
+    				<div class="block notice_list_3">
+    				</div>
+    				<div class="btn-boards"><a href="#"><img src="/images/new/btn/btn_boards-on.png" alt="" /></a></div>
+    			</div>
+    		</div>
+    	</div>
+	</div>
+	<!-- //Contents -->
+    <!-- Footer -->
+  	<div id="footer">
+    	<div class="lwrapper">
+    		<a href="#" class="emblem"><img src="/images/new/emblem5.png" alt="Korea University" /></a>
+    		<div class="address">
+    			<ul>
+    				<li><a href="javascript:openSecurityWindow();">개인정보처리방침</a></li>
+    				<li><a href="http://kugc.korea.ac.kr" target="_blank" >전력현황(그린캠퍼스)</a></li>
+    				<!-- 2016. 9. 27  화면에서 제외 
+    				<li><a href="http://wizard.korea.ac.kr/user/indexSub.action?codyMenuSeq=1506818&siteId=kugc&menuType=T&uId=3&sortChar=A&menuFrame=&linkUrl=6_1.html&mainFrame=right"
+            		 target="_blank" >순환자원거래소</a></li>
+            		 -->
+    			</ul>
+    			<span class="add"><span>[서울]</span> 02841 서울특별시 성북구 안암로 고려대학교 TEL.02-3290-1114 | <span>[세종]</span> 30019 세종특별자치시 세종로 고려대학교 세종캠퍼스 TEL.044-860-1114</span>
+    			<span class="copyright">COPYRIGHT(C)2014 KOREA UNIVERSITY. ALL RIGHTS RESERVED.</span>
+    		</div>
+    	</div>
+    </div>
+    <!-- //Footer -->
+    <!-- Layer Popup -->
+    <div class="layerpop common">
+    	<div class="lp_inner">
+    		<div class="top">
+    			<h1 class="layerpopup_title"></h1>
+    			<a href="#" class="dialog_close"><img src="/images/new/btn/btn_21.png" alt="x" /></a>
+    		</div>
+    		<div class="contents">
+   			<div class="sub_content">
+				<div class="page  layerpopup_content">
+   				</div>
+    		</div>
+    		</div>
+    		<div class="bottom">
+    			<button type="button" class="dialog_close"><span>닫기</span></button>
+    		</div>
+    	</div>
+    </div>
+    <!-- //Layer Popup -->
+    <!-- Layer Popup -->
+    <div class="layerpop findid">
+    	<div class="top">
+    		<h1>아이디/비밀번호 찾기</h1>
+			<a href="#"><img src="../images/new/btn/btn_21.png" alt="x" onclick="dialog_close();"/></a>
+	    </div>
+    	<div class="contents">
+			<div class="page step1">
+				<form name="findid1" action="" onsubmit="return doMemberCheck(this, '2');">
+					<ul class="tabs">
+						<li class="on">
+							<span class="txt1">STEP 01</span>
+							<span class="txt2">본인확인</span>
+							<span class="icon">&nbsp;</span>
+						</li>
+						<li>
+							<span class="txt1">STEP 02</span>
+							<span class="txt2">아이디/비밀번호 찾기</span>
+							<span class="icon last">&nbsp;</span>
+						</li>
+					</ul>
+					<table>
+						<colgroup>
+							<col width="153px" />
+							<col width="190px" />
+							<col width="104px" />
+							<col width="220px" />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>학번/교번</th>
+								<td>
+									<input type="text" name="empNo" title="학번/교번" />
+									<input type="hidden" name="callPage" value="2"/>
+								</td>
+								<th>이름</th>
+								<td>
+									<input type="text" name="korNm" title="이름" />
+								</td>
+							</tr>
+							<tr>
+								<th colspan="4"><input type="radio" name="certDiv" value="1" onclick="f_change(this, '2');" title="등록 휴대폰으로 인증" />
+									등록 휴대폰으로 인증
+									
+								</th>
+							</tr>
+							<tr id="certDiv1" style="display:none;" class="hide">
+								<td colspan="4" style="padding-left:30px;">
+									<label><strong>학적/인사에 등록된 휴대폰 번호와 일치해야 합니다.</strong></label><p/><p/>
+									<table style="width:400px;">
+										<tr><td colspan="2"></td></tr>
+										
+										<tr>
+											<th>휴대폰</th>
+											<td><select style="width:50px;" name="phone1" title="휴대폰1">
+													<option value="010" selected="selected">010</option>
+													<option value="011">011</option>
+													<option value="016">016</option>
+													<option value="017">017</option>
+													<option value="018">018</option>
+													<option value="019">019</option>
+												</select> - <input type="text" name="phone2" class="ipt2" maxlength="4" title="휴대폰2" /> - <input type="text" name="phone3" class="ipt2" maxlength="4" title="휴대폰3"/>
+												<input type="button" name="bu_send" value="인증번호 받기" class="mbtn btnwhite" onclick="doSendNumber('2');"/>
+												<p/><input type="text" name="certNum1" class="ipt4" title="인증번호"/>
+											</td>
+										</tr>
+										<tr><td colspan="2"></td></tr>
+									</table>
+								</td>
+							</tr>
+							
+							<tr>
+								<th colspan="4"><input type="radio" name="certDiv" value="2" onclick="f_change(this, '2');" title="등록 이메일로 인증" />
+									등록 이메일로 인증
+									
+								</th>
+							</tr>
+
+							<tr id="certDiv2" style="display:none;" class="hide">
+								<td colspan="4" style="padding-left:30px;">
+									<label><strong>학적/인사에 등록된 개인 이메일 주소와 일치해야 합니다.</strong></label><p/><p/>
+									<table style="width:400px;">
+										<tr><td colspan="2"></td></tr>
+										
+										<tr>
+											<th>이메일 주소</th>
+											<td><input type="text" name="userMail" title="이메일 주소" />
+												<input type="button" name="bu_send" value="인증번호 받기" class="mbtn btnwhite" onclick="doSendNumber('2');"/>
+												<p/><input type="text" name="certNum2" class="ipt4" title="인증번호" />
+											</td>
+										</tr>
+										<tr><td colspan="2"></td></tr>
+									</table>
+								</td>
+							</tr>
+
+							<tr>
+								<th colspan="4"><input type="radio" name="certDiv" value="5" onclick="f_change(this, '2');" title="힌트로 인증" />
+									힌트로 인증
+									
+								</th>
+							</tr>
+
+							<tr id="certDiv5" style="display:none;" class="hide">
+								<td colspan="4" style="padding-left:30px;">
+									<label><strong>싱글 아이디 신청 시 입력하신 질문과 답변을 입력해 주세요.</strong></label><p/><p/>
+									<table style="width:400px;">
+										<tr><td colspan="2"></td></tr>
+										<tr>
+											<th>비밀번호힌트질문</th>
+											<td><input type="text" name="pQuestion" maxlength="30" class="ipt5" title="비밀번호 힌트 질문" /></td>
+										</tr>
+										<tr>
+											<th>답변</th>
+											<td><input type="text" name="pAnswer" title="답변"/></td>
+										</tr>
+										<tr><td colspan="2"></td></tr>
+									</table>
+								</td>
+							</tr>
+	
+<!-- G-Pin 서비스 종료
+ 	 						<tr>
+								<th colspan="4"><input type="radio" name="certDiv" value="4" onclick="f_change(this, '2');" />
+									G-Pin으로 인증
+									
+								</th>
+							</tr>
+							<tr id="certDiv4" style="display:none;" class="hide">
+								<td colspan="4" style="padding-left:30px;">
+									<input type="button" name="bu_gpin" class="mbtn btnwhite" value="인증하기" class="mbtn btnwhite" onclick="doAuthGpin('2','2');"/>
+									<input type="button" name="help_gpin" class="mbtn btnwhite" value="문제해결" class="mbtn btnwhite" onclick="helpGPIN();"/>
+									<input type="button" name="new_gpin" class="mbtn btnwhite" value="신규발급" class="mbtn btnwhite" onclick="newGPIN();"/>
+									<input type="hidden" name="userCertDi" />
+									<input type="hidden" name="oneId4" />
+								</td>
+							</tr>
+-->							
+							<tr>
+								<th colspan="4"><input type="radio" name="certDiv" value="3" onclick="f_change(this, '2');" title="본인 명의 휴대폰으로 인증" />
+									본인 명의 휴대폰으로 인증(본인 주민등록번호로 가입된 휴대폰)
+									
+								</th>
+							</tr>
+							<tr id="certDiv3" style="display:none;" class="hide">
+								<td colspan="4" style="padding-left:30px;">
+									<input type="button" name="bu_mobile" class="mbtn btnwhite" value="인증하기" onclick="doAuthGpin('2','1');"/>
+									<input type="button" name="help_gpin" class="mbtn btnwhite" value="문제해결" onclick="helpGPIN();"/>
+									<input type="hidden" name="userCertCi" />
+									<input type="hidden" name="oneId3" />
+								</td>
+							</tr>
+
+						</tbody>
+					</table>
+					<span class="dotted_line noh">&nbsp;</span>
+					<ul class="list type2">
+						<li>자주 사용하는 소속정보 하나를 선택하세요.</li><li>소속정보 누락시 원스탑(Tel: 02-3290-1141~5, 4090~2)으로 문의바랍니다</li><li>소속정보는 정보수정에서 확인 가능합니다.</li>
+					</ul>
+					<div class="bottom_btns">
+						<button type="submit" class="btnorange"><span>확인</span></button>
+						<button type="button" class="btnwhite dialog_close"><span>취소</span></button>
+					</div>
+				</form>
+			</div>		
+   			<div class="page step2">
+				<form name="findid2" action="" onsubmit="return doFindId(this);">
+					<ul class="tabs">
+						<li>
+							<span class="txt1">STEP 01</span>
+							<span class="txt2">본인확인</span>
+							<span class="icon">&nbsp;</span>
+						</li>
+						<li class="on">
+							<span class="txt1">STEP 02</span>
+							<span class="txt2">아이디/비밀번호 찾기</span>
+							<span class="icon last">&nbsp;</span>
+						</li>
+					</ul>
+					<table>
+						<colgroup>
+							<col width="153px" />
+							<col width="514px" />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>Single ID</th>
+								<td class="oneId"></td>
+							</tr>
+							<tr>
+								<th>새 비밀번호 입력</th>
+								<td>
+									<input type="password" name="newPw1" title="새 비밀번호 입력" />
+									<input type="hidden" name="empNo" />
+									<input type="hidden" name="oneId"/>
+									<input type="hidden" name="diValue"/>
+								</td>
+							</tr>
+							<tr>
+								<th>새 비밀번호 확인</th>
+								<td><input type="password" name="newPw2" title="새 비밀번호 확인" /></td>
+							</tr>
+						</tbody>
+					</table>	
+					<div>
+					<br /><br />
+					■ 비밀번호 작성규칙
+					<br />
+					&nbsp;&nbsp;- 최소 10자리 이상 : 영대소문자(A~Z, a~z, 52개), 숫자(0~9, 10개) 및 특수문자(32개) 중 2종류로 구성한 경우
+					<br />
+					&nbsp;&nbsp;- 최소 8자리 이상 : 영대소문자(A~Z, a~z, 52개), 숫자(0~9, 10개) 및 특수문자(32개) 중 3종류 이상으로 구성한 경우
+					<br /><br />
+					</div>				
+					<div class="bottom_btns">
+						<button type="submit" class="btnorange"><span>확인</span></button>
+					</div>
+				</form>
+			</div>
+    	</div>
+    </div>
+	<!-- //Layer Popup -->
+	
+	
+	<!-- Layer Popup -->
+    <div class="layerpop loginerr">
+    	<div class="top">
+    		<h1><b>[로그인 오류 안내]</b></h1>
+			<a href="#"><img src="../images/new/btn/btn_21.png" alt="x" onclick="dialog_close();"/></a>
+	    </div>
+    	<div class="contents">
+			<div class="page step1">
+				<ul class="list type2">
+					<li>포탈 로그인 보안 강화로 인해 일부 로그인 오류가 발생하고 있습니다.</li>
+					<li>브라우저에 저장된(캐시) 오래된 프로그램을 아래 안내에 따라 삭제 하시기 바랍니다.</li>
+					<br />
+					<ul class="tabs">
+					<li class="on">
+						<span class="txt2">크롬(Chrome) 설정</span>
+						<span class="icon">&nbsp;</span>
+					</li>
+					</ul>
+					<table>
+						<tbody>
+							<tr>
+								<td>
+									<b>설정 ▶ 개인정보 및 보안 ▶ 인터넷 사용 기록 삭제 ▶ 고급 ▶ 기간[전체기간], 항목[모두 체크] ▶ 인터넷 사용 기록 삭제</b>
+								</td>
+							</tr>	
+						</tbody>
+					</table>
+											
+					<br /><br /><br /><br /><br />
+					<ul class="tabs">
+					<li class="on">
+						<span class="txt2">Internet Explorer 설정</span>
+						<span class="icon">&nbsp;</span>
+					</li>
+					</ul>
+					<table>
+						<tbody>
+							<tr>
+								<td>
+									<b>Alt + F ▶ 도구 ▶ 인터넷 옵션 ▶ 설정 ▶  웹 페이지를 열 때마다(E) ▶  확인 ▶ 확인 ▶ 새 Explorer 창</b>
+								</td>
+							</tr>	
+						</tbody>
+					</table>
+				</ul>
+				<div class="bottom_btns">
+					<button type="button" class="btnwhite dialog_close"><span>닫기</span></button>
+				</div>
+			</div>		
+    	</div>
+    </div>
+    <!-- Layer Popup -->
+    	<div class="layerpop findpw">
+		<div class="top">
+			<h1>비밀번호찾기</h1>
+			<a href="#" class="dialog_close"><img src="/images/new/btn/btn_21.png" alt="x" /></a>
+		</div>
+		<div class="contents">
+			<form name="findpw1" action="" onsubmit="return doFindPw(this, '1');">
+				<div class="page step1">
+					<ul class="tabs">
+						<li class="on">
+							<span class="txt1">STEP 01</span>
+							<span class="txt2">기본정보입력</span>
+							<span class="icon">&nbsp;</span>
+						</li>
+						<li>
+							<span class="txt1">STEP 02</span>
+							<span class="txt2">인증절차</span>
+							<span class="icon">&nbsp;</span>
+						</li>
+						<li>
+							<span class="txt1">STEP 03</span>
+							<span class="txt2">비밀번호 안내</span>
+							<span class="icon last">&nbsp;</span>
+						</li>
+					</ul>
+					<table>
+						<colgroup>
+							<col width="106px" />
+							<col width="560px" />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>이름</th>
+								<td><input type="text" name="korNm" maxlength="30" value="" class="ipt5" title="이름" /></td>
+							</tr>
+							<tr>
+								<th>주민등록번호</th>
+								<td><input type="text" name="ssn1" maxlength="6" value="" class="ipt4 fleft" title="주민등록번호1" /> - <input type="password" name="ssn2" maxlength="7" value="" class="ipt4" title="주민등록번호2" /></td>
+							</tr>
+							<tr>
+								<th>싱글 아이디</th>
+								<td><input type="text" name="id" maxlength="30" value="" class="ipt5" title="아이디" /></td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="bottom_btns">
+						<button type="submit" class="btnorange"><span>확인</span></button>
+						<button type="button" class="btnwhite dialog_close"><span>취소</span></button>
+					</div>
+					<span class="dotted_line noh">&nbsp;</span>
+					<ul class="list type2">
+						<li class="on">ID를 찾을 수 없는 경우는 아래로 문의하시기 바랍니다.</li>
+				    		<li><strong>학생:</strong> One-Stop서비스센터 (☎ 02-3290-1141~5)</li>
+				    		<li><strong>교원/강사/직원:</strong> 전산개발부(☎ 02-3290-4777)</li>
+					</ul>
+				</div>
+			</form>
+			<form name="findpw2" action="" onsubmit="return doFindPw(this, '2');">
+			<input type="hidden" name="hint" />
+			<input type="hidden" name="outEmail" />
+			<input type="hidden" name="mobile" />
+			<input type="hidden" name="ssn" />
+				<div class="page step2">
+					<ul class="tabs">
+						<li>
+							<span class="txt1">STEP 01</span>
+							<span class="txt2">기본정보입력</span>
+							<span class="icon">&nbsp;</span>
+						</li>
+						<li class="on">
+							<span class="txt1">STEP 02</span>
+							<span class="txt2">인증절차</span>
+							<span class="icon">&nbsp;</span>
+						</li>
+						<li>
+							<span class="txt1">STEP 03</span>
+							<span class="txt2">비밀번호 안내</span>
+							<span class="icon last">&nbsp;</span>
+						</li>
+					</ul>
+					<ul class="cert_list">
+						<li>
+							<span class="icon"><img src="../images/new/icon/icon_54.png" alt="" /></span>
+							<div class="detail">
+								<strong class="title">비밀번호 힌트</strong>
+								<span class="txt">가입시 입력한 비밀번호 힌트/답을 확인하여 비밀번호 찾기</span>
+							</div>
+							<span class="btnbox">
+								<a href="#" class="btn" onclick="doFindPwResult('1');">재발급 받기</a>
+							</span>
+						</li>
+						<li>
+							<span class="icon"><img src="../images/new/icon/icon_55.png" alt="" /></span>
+							<div class="detail">
+								<strong class="title">등록된 메일</strong>
+								<span class="txt">가입시 입력한 추가메일 주소로 비밀번호 받기</span>
+								<span class="contact"><div class="email"></div></span>
+							</div>
+							<span class="btnbox">
+								<a href="#" class="btn" onclick="doFindPwResult('2');">재발급 받기</a>
+							</span>
+						</li>
+						<li>
+							<span class="icon"><img src="../images/new/icon/icon_56.png" alt="" /></span>
+							<div class="detail">
+								<strong class="title">등록한 휴대폰</strong>
+								<span class="txt">가입시 등록한 휴대폰으로 비밀번호 받기</span>
+								<span class="contact"><div class="mobile"></div></span>
+							</div>
+							<span class="btnbox">
+								<a href="#" class="btn" onclick="doFindPwResult('3');">재발급 받기</a>
+							</span>
+						</li>
+						<!-- <li>
+							<span class="icon"><img src="../images/new/icon/icon_57.png" alt="" /></span>
+							<div class="detail">
+								<strong class="title">공인인증서</strong>
+								<span class="txt">공인인증서로 본인 인증하여 비밀번호 바로변경</span>
+							</div>
+							<span class="btnbox">
+								<a href="#" class="btn">재발급 받기</a>
+							</span>
+						</li> -->
+					</ul>
+					<div class="bottom_btns">
+						<button type="button" class="btnwhite dialog_close"><span>닫기</span></button>
+					</div>
+				</div>
+				<div class="page step21">
+					<ul class="tabs">
+						<li>
+							<span class="txt1">STEP 01</span>
+							<span class="txt2">기본정보입력</span>
+							<span class="icon">&nbsp;</span>
+						</li>
+						<li class="on">
+							<span class="txt1">STEP 02</span>
+							<span class="txt2">인증절차</span>
+							<span class="icon">&nbsp;</span>
+						</li>
+						<li>
+							<span class="txt1">STEP 03</span>
+							<span class="txt2">비밀번호 안내</span>
+							<span class="icon last">&nbsp;</span>
+						</li>
+					</ul>
+					<table>
+						<colgroup>
+							<col width="142px" />
+							<col width="524px" />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>비밀번호 힌트 질문</th>
+								<td class="hint">&nbsp;</td>
+							</tr>
+							<tr>
+								<th>비밀번호 힌트 답</th>
+								<td><input type="text" name="answer" maxlength="10" value="" class="ipt3" title="비밀번호 힌트 답" /></td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="bottom_btns">
+						<button type="submit" class="btnorange"><span>확인</span></button>
+						<button type="button" class="btnwhite dialog_close"><span>취소</span></button>
+					</div>
+				</div>
+			</form>
+			<form name="findpw3" action="" onsubmit="return doFindPw(this, '3');">
+				<div class="page step3">
+					<ul class="tabs">
+						<li>
+							<span class="txt1">STEP 01</span>
+							<span class="txt2">기본정보입력</span>
+							<span class="icon">&nbsp;</span>
+						</li>
+						<li>
+							<span class="txt1">STEP 02</span>
+							<span class="txt2">인증절차</span>
+							<span class="icon">&nbsp;</span>
+						</li>
+						<li class="on">
+							<span class="txt1">STEP 03</span>
+							<span class="txt2">비밀번호 안내</span>
+							<span class="icon last">&nbsp;</span>
+						</li>
+					</ul>
+					<div class="pwd_form">
+						<div class="inner">
+							<label>신규 비밀번호</label>
+							<input type="password" name="password" value="" title="신규 비밀번호" />
+							<label>신규 비밀번호 확인</label>
+							<input type="password" name="password_confirm" value="" title="신규 비밀번호 확인" />
+						</div>
+					</div>
+					<div class="bottom_btns">
+						<button type="submit" class="btnorange"><span>확인</span></button>
+						<button type="button" class="btnwhite dialog_close"><span>취소</span></button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- //Layer Popup -->
+    <!-- Layer Popup -->
+    <div class="layerpop singleid" style="overflow-y:auto">
+		<div class="top">
+			<h1>싱글 아이디 신청</h1>
+			<a href="#"><img src="../images/new/btn/btn_21.png" alt="x" onclick="dialog_close();"/></a>
+		</div>
+		<div class="contents">
+			<div class="page step1">
+				<form method="post" onsubmit="return doMemberCheck(this, '1');">				
+					<ul class="tabs">
+						<li class="on">
+							<span class="txt1">STEP 01</span>
+							<span class="txt2" style="width:120px;">본인확인</span>
+							<span class="icon">&nbsp;</span>
+						</li>
+						<li style="width:280px;">
+							<span class="txt1">STEP 02</span>
+							<span class="txt2" style="width:150px;">기본정보입력</span>
+							<span class="icon">&nbsp;</span>
+						</li>
+						<li>
+							<span class="txt1">STEP 03</span>
+							<span class="txt2" style="width:120px;">가입완료</span>
+							<span class="icon last">&nbsp;</span>
+						</li>
+					</ul>
+					<font color="red">※ 신입생은 학기 시작 후 (1학기: 3월/ 2학기: 9월)부터 신청가능합니다.</font>
+					<table>
+						<colgroup>
+							<col width="153px" />
+							<col width="190px" />
+							<col width="104px" />
+							<col width="220px" />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>학번/교번</th>
+								<td>
+									<input type="text" name="empNo" title="학번/교번" />
+									<input type="hidden" name="callPage" value="1"/>
+								</td>
+								<th>이름</th>
+								<td>
+									<input type="text" name="korNm" title="이름" />
+								</td>
+							</tr>
+							
+							<tr>
+								<th colspan="4"><input type="radio" name="certDiv" value="1" onclick="f_change(this, '1');" title="등록 휴대폰으로 인증" />
+									등록 휴대폰으로 인증
+									
+								</th>
+							</tr>
+							<tr id="certDiv1" style="display:none;" class="hide">
+								<td colspan="4" style="padding-left:30px;">
+									<label><strong>학적/인사에 등록된 휴대폰 번호와 일치해야 합니다.</strong></label><p/><p/>
+									<table style="width:400px;">
+										<tr><td colspan="2"></td></tr>
+										
+										<tr>
+											<th>휴대폰</th>
+											<td><select  title="휴대폰1" style="width:50px;" name="phone1">
+													<option value="010" selected="selected">010</option>
+													<option value="011">011</option>
+													<option value="016">016</option>
+													<option value="017">017</option>
+													<option value="018">018</option>
+													<option value="019">019</option>
+												</select> - <input type="text" name="phone2" class="ipt2" maxlength="4" title="휴대폰2" /> - <input type="text" name="phone3" class="ipt2" maxlength="4" title="휴대폰3" />
+												<input type="button" name="bu_send" value="인증번호 받기" class="mbtn btnwhite" onclick="doSendNumber('1');"/>
+												<p/><input type="text" name="certNum1" class="ipt4" title="인증번호" />
+											</td>
+										</tr>
+										<tr><td colspan="2"></td></tr>
+									</table>
+								</td>
+							</tr>
+							
+							<tr>
+								<th colspan="4"><input type="radio" name="certDiv" value="2" onclick="f_change(this, '1');" title="등록 이메일로 인증" />
+									등록 이메일로 인증
+									
+								</th>
+							</tr>
+							<tr id="certDiv2" style="display:none;" class="hide">
+								<td colspan="4" style="padding-left:30px;">
+									<label><strong>학적/인사에 등록된 개인 이메일 주소와 일치해야 합니다.</strong></label><p/><p/>
+									<table style="width:400px;">
+										<tr><td colspan="2"></td></tr>
+										
+										<tr>
+											<th>이메일 주소</th>
+											<td><input type="text" name="userMail" title="이메일 주소" />
+												<input type="button" name="bu_send" value="인증번호 받기" class="mbtn btnwhite" onclick="doSendNumber('1');"/>
+												<p/><input type="text" name="certNum2" class="ipt4" title="인증번호" />
+											</td>
+										</tr>
+										<tr><td colspan="2"></td></tr>
+									</table>
+								</td>
+							</tr>
+
+						
+							<tr>
+								<th colspan="4"><input type="radio" name="certDiv" value="4" onclick="f_change(this, '1');" title="G-Pin으로 인증" />
+									G-Pin으로 인증
+																	
+								</th>
+							</tr>
+							<tr id="certDiv4" style="display:none;" class="hide">
+								<td colspan="4" style="padding-left:30px;">
+									<input type="button" name="bu_gpin" class="mbtn btnwhite" value="인증하기" onclick="doAuthGpin('1', '2');"/>
+									<input type="button" name="help_gpin" class="mbtn btnwhite" value="문제해결" onclick="helpGPIN();"/>
+									<input type="button" name="new_gpin" class="mbtn btnwhite" value="신규발급" onclick="newGPIN();"/>
+									<!-- <input type="hidden" name="korNm4" /> -->
+									<input type="hidden" name="userCertDi" />
+								</td>
+							</tr> 
+ 	 						
+ 	 						<tr>
+								<th colspan="4"><input type="radio" name="certDiv" value="3" onclick="f_change(this, '1');" title="본인 명의 휴대폰으로 인증" />
+									본인 명의 휴대폰으로 인증(본인 주민등록번호로 가입된 휴대폰)
+									
+								</th>
+							</tr>
+							<tr id="certDiv3" style="display:none;" class="hide">
+								<td colspan="4" style="padding-left:30px;">
+									<input type="button" name="bu_mobile" class="mbtn btnwhite" value="인증하기" onclick="doAuthGpin('1', '1');"/>
+									<input type="button" name="help_gpin" class="mbtn btnwhite" value="문제해결" onclick="helpGPIN();"/>
+									<!-- <input type="hidden" name="korNm3" /> -->
+									<input type="hidden" name="userCertCi" />
+								</td>
+							</tr>
+						
+						</tbody>
+					</table>
+					<ul class="list">
+						Single ID 신청을 위해 입력되는 교번/학번, 생년월일은 본인 확인을 위한 자료로 수집되는 개인정보가 아닙니다.
+					</ul>
+					<div class="bottom_btns">
+						<button type="submit" class="btnorange"><span>확인</span></button>
+						<button type="button" class="btnwhite dialog_close"><span>취소</span></button>
+					</div>
+				</form>
+			</div>
+			<div class="page step2">
+				<form method="post" name="page_step2" onsubmit="return doMemberSave(this);">
+					<input type="hidden" name="empNo" />
+					<input type="hidden" name="korNm" />
+					<input type="hidden" name="mobile" />
+					<input type="hidden" name="email" />
+					<input type="hidden" name="outEmail" />
+					<input type="hidden" name="useWebMail" value="N" />
+					<input type="hidden" name="diValue" />
+					<ul class="tabs">
+						<li>
+							<span class="txt1">STEP 01</span>
+							<span class="txt2">본인확인</span>
+							<span class="icon">&nbsp;</span>
+						</li>
+						<li class="on">
+							<span class="txt1">STEP 02</span>
+							<span class="txt2">기본정보입력</span>
+							<span class="icon">&nbsp;</span>
+						</li>
+						<li>
+							<span class="txt1">STEP 03</span>
+							<span class="txt2">가입완료</span>
+							<span class="icon last">&nbsp;</span>
+						</li>
+					</ul>
+					<table>
+						<colgroup>
+							<col width="153px" />
+							<col width="514px" />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>이름</th>
+								<td class="korNm"></td>
+							</tr>
+							<tr>
+								<th>Single ID</th>
+								<td>
+									<input type="text" name="id"  maxlength="30" onblur="getMail();" title="아이디" />
+									<a href="#" class="btncheck" onclick="doMemberIdCheck(this);"><span>아이디확인</span></a>
+								</td>
+							</tr>
+							<tr>
+								<th>비밀번호</th>
+								<td><input type="password" name="password" maxlength="20" title="비밀번호" /></td>
+							</tr>
+							<tr>
+								<th>비밀번호확인</th>
+								<td><input type="password" name="password_confirm" maxlength="20" title="비밀번호확인" /></td>
+							</tr>
+							<tr>
+								<th>비밀번호힌트질문</th>
+								<td><input type="text" name="hint" maxlength="20" title="비밀번호 힌트 질문" /></td>
+							</tr>
+							<tr>
+								<th>비밀번호힌트답</th>
+								<td><input type="text" name="hintAnswer" maxlength="10" title="비밀번호 힌트 답" /></td>
+							</tr>
+						</tbody>
+					</table>
+					<br /><br />
+					■ Single ID 생성 시 유의사항
+					<br/>
+					&nbsp;&nbsp;- Single ID는 메일 ID로도 사용하게 되니 신중하게 결정하여 주시기 바랍니다.
+					<br/>
+         			&nbsp;&nbsp;- 신입생은 Single ID 생성 후 6개월동한 삭제할 수 없습니다.
+					<br /><br />
+					■ 비밀번호 작성규칙
+					<br />
+					&nbsp;&nbsp;- 최소 10자리 이상 : 영대소문자(A~Z, a~z, 52개), 숫자(0~9, 10개) 및 특수문자(32개) 중 2종류로 구성한 경우
+					<br />
+					&nbsp;&nbsp;- 최소 8자리 이상 : 영대소문자(A~Z, a~z, 52개), 숫자(0~9, 10개) 및 특수문자(32개) 중 3종류 이상으로 구성한 경우
+					<br/><br/>
+					■ 고려대학교는 싱글아이디 신청을 위해 다음과 같이 개인정보를 수집, 이용하고 있습니다.<br />
+					<br />
+					<table class="tbl_view">
+						<colgroup>
+							<col width="30%" />
+							<col width="" />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>개인정보의 수집, 이용 목적</th>
+								<td>KUPID, 메일, 학사행정, 싱글아이디 연동된 교내 홈페이지의 로그인</td>
+							</tr>
+							<tr>
+								<th>수집하려는 개인정보의 항목</th>
+								<td>이름, ID, 비밀번호, 비밀번호 찾기 힌트</td>
+							</tr>
+							<tr>
+								<th>개인정보의 보유 및 이용 기간</th>
+								<td>회원 탈퇴시 까지</td>
+							</tr>
+							<tr>
+								<th>동의 거부 권리 및 동의 거부에 따른 불이익 내용</th>
+								<td>정보주체는 개인정보의 수집·이용목적에 대한 동의를 거부할 수 있으나, 동의 거부 시에는 교내 홈페이지에서 제공하는 서비스를 이용 하실 수 없습니다.</td>
+							</tr>
+						</tbody>
+					</table>
+					<br />
+					<br />
+					개인정보의 수집 및 이용목적에 동의하십니까 ? <input type="radio" name="agree" value="0" title="동의함" /> 동의함 <input type="radio" name="agree" value="1" checked title="동의하지 않음" /> 동의하지 않음
+					<br />
+					<div class="bottom_btns">
+						<button type="submit" class="btnorange"><span>확인</span></button>
+						<button type="button" class="btnwhite dialog_close"><span>취소</span></button>
+					</div>
+				</form>
+			</div>
+			<div class="page step3">
+				<form method="post" onsubmit="return doMemberFinish(this);">
+					<ul class="tabs">
+						<li>
+							<span class="txt1">STEP 01</span>
+							<span class="txt2">본인확인</span>
+							<span class="icon">&nbsp;</span>
+						</li>
+						<li>
+							<span class="txt1">STEP 02</span>
+							<span class="txt2">기본정보입력</span>
+							<span class="icon">&nbsp;</span>
+						</li>
+						<li class="on">
+							<span class="txt1">STEP 03</span>
+							<span class="txt2">가입완료</span>
+							<span class="icon last">&nbsp;</span>
+						</li>
+					</ul>
+					<div class="ui_top">소속정보가 일치하는 정보</div>
+					<div class="ui_bottom">
+						<div class="_position"></div>
+					</div>
+					<ul class="list">
+							
+							<li>소속정보 누락시 원스탑(Tel:3290-1144)으로 문의바랍니다</li><li>소속정보는 정보수정에서 확인 가능합니다.</li>
+							
+							
+					</ul>
+					<div class="notice">
+						<span>
+							<strong>소속정보가 불일치하는 정보 :</strong> 
+							<div class="_nposition"></div>
+						</span>
+					</div>
+					<div class="bottom_btns">
+						<button type="submit" class="btnorange"><span>확인</span></button>
+						
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+    
+    <div class="layerpop passwordChange" id="passwordChange">
+    	<form method="post" onsubmit="return passwordChange();">
+		<input type="hidden" name="div" />
+		<input type="hidden" name="url" />
+		<input type="hidden" name="path" />
+		<input type="hidden" name="id" />
+		<input type="hidden" name="current_password" />
+    	<div class="lp_inner">
+    		<div class="top">
+    			<h1>비밀번호 변경 권고</h1>
+    			<a href="javascript:;" class="dialog_close"><img src="/images/new/btn/btn_21.png" alt="x" /></a>
+    		</div>
+    		<div class="contents">
+   			<div class="sub_content">
+				<div class="page">
+					<table class="tbl_view">
+						<colgroup>
+							<col width="111px" />
+							<col width="631px" />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>새 비밀번호 입력</th>
+								<td><input type="password" name="new_password" class="input01" title="새 비밀번호 입력" /></td>
+							</tr>
+							<tr>
+								<th>새 비밀번호 확인</th>
+								<td><input type="password" name="password_confirm" class="input01" title="새 비밀번호 확인" /></td>
+							</tr>
+						</tbody>
+					</table>
+					
+					<div class="notice_blk">
+						<div><p>포탈 비밀번호 변경시 스마트폰, 노트북 등의 기기에서 무선랜 비밀번호 재설정이 필요합니다.</p></div>
+					</div>
+					
+					
+					
+						<div class="desc">
+							<span class="tit_redbullet">* 개인정보 보호를 위한 비밀번호 변경 안내 *</span>
+							<ul class="list">
+								<li>관련근거 : 지식기반 포털시스템 정보보안 시행세칙 제 7조 (비밀번호 변경 및 관리)</li>
+							    <li>
+							    	비밀번호 관리기준
+							    	<br/><strong>1.</strong> 비밀번호는 Single-ID와 동일하지 않아야 한다.
+							    	<br/><strong>2.</strong> 비밀번호는 개인정보(주민번호, 핸드폰번호 등)와 동일하지 않아야 한다.
+							    	<br/><strong>3.</strong> 길이가 10자리 이상인 문자, 숫자 조합으로 구성하고, 특수문자를 포함하면 8자리 이상으로 한다.
+							    	<br/><strong>4.</strong> 동일단어 또는 숫자를 반복하여 사용하지 말아야 한다.
+							    	<br/><strong>5.</strong> 비밀번호는 6개월 이상 지속적으로 사용하지 못한다.
+							    </li>
+							    <li id="periodMsg">다음에 변경하기 : 버튼을 눌러 변경을 연기하시면 3개월 후 다시 안내해 드립니다.</li>
+							    <li id="ismsMsgKo"><b>정보보호 관리체계(ISMS) 인증 기준에 따라 강화된 암호화 방식으로 비밀번호 재설정이 필요합니다.</b></li>
+							</ul>
+						</div>
+						<div class="bottom_btns_center">
+							<input type="submit" value="변경하기" title="" class="mbtn btnred"/>
+							<input type="button" value="다음에 변경하기" title="" class="mbtn btngray" onclick="passwordChangeCancel();" id="changeCancelKo" />
+						</div>
+					
+   				</div>
+    		</div>
+    		</div>
+    		<div class="bottom">
+    			<button type="button" class="dialog_close" style="visibility: hidden;"><span>닫기</span></button>
+    		</div>
+    	</div>
+    	</form>
+    </div>
+     <div class="loginpop suganglayer">
+    	<div class="lp_inner">
+    		<div class="top">
+    			<h1>수강신청</h1>
+    			<a href="#" class="dialog_close"><img src="/images/new/btn/btn_21.png" alt="x" /></a>
+    		</div>
+    		<div class="contents">
+   			<div class="sub_content">
+				<div class="page">
+					<div class="notice_blk">
+						<div><p><a href="https://sugang.korea.ac.kr" target="_blank">학부 수강신청</a></p></div>
+					</div>
+					<div class="notice_blk">
+						<div><p><a href="https://sugang.korea.ac.kr/graduate" target="_blank">대학원 수강신청</a></p></div>
+					</div>
+   				</div>
+    		</div>
+    		</div>
+    	</div>
+    </div>
+     <div class="loginpop loginlayer">
+    	<form action="https://portal.korea.ac.kr/common/Login.kpd" name="loginform2" id="loginform2" onsubmit="return doLogin(this);">
+    		<input type="hidden" name="direct_div"/> 
+    	<div class="lp_inner">
+    		<div class="top">
+    			<h1>로그인</h1>
+    			<a href="#" class="dialog_close"><img src="/images/new/btn/btn_21.png" alt="x" /></a>
+    		</div>
+    		<div class="contents">
+   			<div class="sub_content">
+				<div class="page">
+					<table class="tbl_view">
+						<colgroup>
+							<col width="25%" />
+							<col width="" />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>아이디</th>
+								<td>
+									<input name="id" type="text" title="아이디" />
+								</td>
+							</tr>
+							<tr>
+								<th>비밀번호</th>
+								<td>
+									<input name="pw" type="password" title="비밀번호" />
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="bottom_btns_center">
+						<input type="submit" value="로그인" title="로그인" class="mbtn btnred" />
+						<input type="button" value="취소" title="취소" class="mbtn btngray dialog_close" />
+						<input type="button" onClick="window.open('http://kucert.korea.ac.kr');" value="(신)제증명" title="(신)제증명" class="mbtn btngray dialog_close" />
+					</div>
+   				</div>
+    		</div>
+    		</div>
+    	</div>
+    	</form>
+    </div>
+    <!-- 공인인증서 로그인 주민등록번호 입력 레이어 -->
+     <div class="loginpop ssnInput" id="ssnInput">
+     	<form name="xecure"><input type="hidden" name="p" /></form>
+        <!-- 로컬, 테스트서버 -->
+     	<!-- <form name="CertificatForm" method="post" action="/common/Login.kpd"> -->
+    	<!-- 운영서버 -->
+    	<form name="CertificatForm" method="post" action="/common/Login.kpd">
+		<input type="hidden" name="div" />
+		<input type="hidden" name="lang" />
+		<input type="hidden" name="cert" value="CERT"/>
+		<input type="hidden" name="key" />
+		<input type="hidden" name="vid" />
+		<input type="hidden" name="UserCertificateData" />
+		<input type="hidden" name="VM" />
+		<input type="hidden" name="_csrf" value="834db69d-4bc4-43f5-b872-bacb71d079f2" />
+		<input type="hidden" name="edd5c612d897c3219c4a14ffe089190583e2148fcee4bc801e464a6255a4f659" value="edd5c612d897c3219c4a14ffe089190583e2148fcee4bc801e464a6255a4f659" />
+
+    	<div class="lp_inner">
+    		<div class="top">
+    			<h1>공동인증서 로그인</h1>
+    			<a href="#" class="dialog_close"><img src="/images/new/btn/btn_21.png" alt="x" /></a>
+    		</div>
+    		<div class="contents">
+	   			<div class="sub_content">
+					<div class="page  layerpopup_content">
+						<table class="tbl_view">
+							<colgroup>
+								<col width="27%" />
+								<col width="" />
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>학번/교번</th>
+									<td><input type="text" name="empNo" title="학번/교번" /></td>
+								</tr>
+								<tr>
+									<th>이름</th>
+									<td><input type="text" name="korNm" title="이름" /></td>
+								</tr>
+							</tbody>
+						</table>
+						
+						<div class="bottom_btns_center">
+							<input type="button" onclick="CertificateLogIn();" value="확인" title="확인" class="mbtn btnred" />
+							<input type="button" value="취소" title="취소" class="mbtn btngray dialog_close" />
+						</div>
+	   				</div>
+	    		</div>
+    		</div>
+    	</div>
+    	</form>
+    </div>
+	<!-- 공인인증서 로그인을 위한 빈 DIV -->
+	<div id="certificateObject" style="display:none;"></div>
+	<div id="certificateObjectEmbed" style="display:none;"></div>
+    <!-- //Layer Popup -->
+	<form name="loginSuccessForm" id="loginSuccessForm" method="post"></form>
+</body>
+</html>
