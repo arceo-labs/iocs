@@ -1,0 +1,179 @@
+Indicators of Compromise (IOCs)
+Note: Specific IoCs may no longer be actor-controlled. They may themselves be compromised infrastructure or email accounts or shared infrastructure such as public VPN or Tor exit nodes. Care should be taken when basing triaging logs or developing detection rules on these indicators. GRU unit 26165 almost certainly uses extensive additional infrastructure and TTPs not specifically listed in this report.
+
+Legitimate utilities
+Unauthorized or unusual use of the following legitimate utilities can be an indication of a potential compromise:
+ntdsutil – A legitimate Windows executable used by threat actors to export contents of Active Directory
+wevtutil – A legitimate Windows executable used by threat actors to delete event logs
+vssadmin – A legitimate Windows executable possibly used by threat actors to make a copy of the server’s C: drive
+ADexplorer – A legitimate window executable to view, edit, and backup Active Directory Certificate Services
+OpenSSH – The Windows version of a legitimate open source SSH client
+schtasks – A legitimate Windows executable used to create persistence using scheduled tasks
+whoami – A legitimate Windows executable used to retrieve the name of the current user
+tasklist – A legitimate Windows executable used to retrieve the list of running processes
+hostname – A legitimate Windows executable used to retrieve the device name
+arp – A legitimate Windows executable used to retrieve the ARP table for mapping the network environment
+systeminfo – A legitimate Windows executable used to retrieve a comprehensive summary of device and operating system information
+net – A legitimate Windows executable used to retrieve detailed user information
+wmic – A legitimate Windows executable used to interact with Windows Management Instrumentation (WMI), such as to retrieve letters assigned to logical partitions on storage drives
+cacls – A legitimate Windows executable used to modify permissions on files
+icacls – A legitimate Windows executable used to modify permissions to files and handle integrity levels and ownership
+ssh – A legitimate Windows executable used to establish network shell connections
+reg – A legitimate Windows executable used to add to or modify the system registry 
+
+Note: Additional heuristics are needed for effective hunting for these and other living off the land (LOTL) binaries to avoid being overwhelmed by false positives if these legitimate management tools are used regularly. See the joint guide, Identifying and Mitigating Living Off the Land Techniques, for guidance on developing a multifaceted cybersecurity strategy that enables behavior analytics, anomaly detection, and proactive hunting, which are part of a comprehensive approach to mitigating cyber threats that employ LOTL techniques.
+
+Malicious scripts
+Certipy – An open source python tool for enumerating and abusing Active Directory Certificate Services
+Get-GPPPassword.py – An open source python script for finding insecure passwords stored in Group Policy Preferences
+ldap-dump.py – A script for enumerating user accounts and other information in Active Directory
+Hikvision backdoor string: “YWRtaW46MTEK”
+
+Suspicious command lines
+While the following utilities are legitimate, and using them with the command lines shown may also be legitimate, these command lines are often used during malicious activities and could be an indication of a compromise:
+edge.exe “-headless-new -disable-gpu”
+ntdsutil.exe "activate instance ntds" ifm "create full C:\temp\[a-z]{3}" quit quit
+ssh -Nf
+schtasks /create /xml
+
+Outlook CVE Exploitation IOCs
+md-shoeb@alfathdoor[.]com[.]sa
+jayam@wizzsolutions[.]com
+accounts@regencyservice[.]in
+m.salim@tsc-me[.]com
+vikram.anand@4ginfosource[.]com
+mdelafuente@ukwwfze[.]com
+sarah@cosmicgold469[.]co[.]za
+franch1.lanka@bplanka[.]com
+commerical@vanadrink[.]com
+maint@goldenloaduae[.]com
+karina@bhpcapital[.]com
+tv@coastalareabank[.]com
+ashoke.kumar@hbclife[.]in
+213[.]32[.]252[.]221
+124[.]168[.]91[.]178
+194[.]126[.]178[.]8
+159[.]196[.]128[.]120
+
+Commonly Used Webmail Providers
+portugalmail[.]pt
+mail-online[.]dk
+email[.]cz
+seznam[.]cz
+
+Malicious Archive Filenames Involving CVE-2023-38831
+calc.war.zip
+news_week_6.zip
+Roadmap.zip
+SEDE-PV-2023-10-09-1_EN.zip
+war.zip
+Zeyilname.zip
+
+Brute Forcing IP Addresses
+Disclaimer: These IP addresses date June 2024 through August 2024. The authoring agencies recommend organizations investigate or vet these IP addresses prior to taking action, such as blocking.
+
+192[.]162[.]174[.]94
+207[.]244[.]71[.]84
+31[.]135[.]199[.]145
+79[.]184[.]25[.]198
+91[.]149[.]253[.]204  
+103[.]97[.]203[.]29
+162[.]210[.]194[.]2
+31[.]42[.]4[.]138
+79[.]185[.]5[.]142
+91[.]149[.]254[.]75  
+209[.]14[.]71[.]127
+ 
+46[.]112[.]70[.]252
+83[.]10[.]46[.]174
+91[.]149[.]255[.]122  
+109[.]95[.]151[.]207
+ 
+46[.]248[.]185[.]236
+83[.]168[.]66[.]145
+91[.]149[.]255[.]19  
+ 
+ 
+64[.]176[.]67[.]117
+83[.]168[.]78[.]27
+91[.]149[.]255[.]195  
+ 
+ 
+64[.]176[.]69[.]196
+83[.]168[.]78[.]31  
+91[.]221[.]88[.]76  
+ 
+ 
+64[.]176[.]70[.]18
+83[.]168[.]78[.]55  
+93[.]105[.]185[.]139  
+ 
+ 
+64[.]176[.]70[.]238
+83[.]23[.]130[.]49  
+95[.]215[.]76[.]209  
+ 
+ 
+64[.]176[.]71[.]201
+83[.]29[.]138[.]115  
+138[.]199[.]59[.]43  
+ 
+ 
+70[.]34[.]242[.]220
+89[.]64[.]70[.]69  
+147[.]135[.]209[.]245  
+ 
+ 
+70[.]34[.]243[.]226
+90[.]156[.]4[.]204  
+178[.]235[.]191[.]182  
+ 
+ 
+70[.]34[.]244[.]100
+91[.]149[.]202[.]215  
+178[.]37[.]97[.]243  
+ 
+ 
+70[.]34[.]245[.]215
+91[.]149[.]203[.]73  
+185[.]234[.]235[.]69  
+ 
+ 
+70[.]34[.]252[.]168
+91[.]149[.]219[.]158
+192[.]162[.]174[.]67  
+ 
+ 
+70[.]34[.]252[.]186
+91[.]149[.]219[.]23  
+194[.]187[.]180[.]20  
+ 
+ 
+70[.]34[.]252[.]222
+91[.]149[.]223[.]130  
+212[.]127[.]78[.]170  
+ 
+ 
+70[.]34[.]253[.]13
+91[.]149[.]253[.]118
+213[.]134[.]184[.]167
+ 
+ 
+70[.]34[.]253[.]247  
+91[.]149[.]253[.]198  
+ 
+ 
+ 
+70[.]34[.]254[.]245
+91[.]149[.]253[.]20  
+ 
+
+
+
+
+
+
+
+
+
+
